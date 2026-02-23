@@ -116,3 +116,27 @@ def get_ridership_by_borough(start: str = None, end: str = None) -> pd.DataFrame
         GROUP BY borough
         ORDER BY total_ridership DESC
     """).df()
+    
+def get_ridership_by_day_of_week(start: str = None, end: str = None) -> pd.DataFrame:
+    """Get average ridership broken down by day of week and hour."""
+    conn = get_connection()
+
+    filters = []
+    if start:
+        filters.append(f"transit_timestamp >= '{start}'")
+    if end:
+        filters.append(f"transit_timestamp < '{end}'")
+
+    where = f"WHERE {' AND '.join(filters)}" if filters else ""
+
+    return conn.execute(f"""
+        SELECT 
+            DAYOFWEEK(transit_timestamp) as day_of_week,
+            DAYNAME(transit_timestamp) as day_name,
+            HOUR(transit_timestamp) as hour_of_day,
+            AVG(ridership) as avg_ridership
+        FROM ridership
+        {where}
+        GROUP BY day_of_week, day_name, hour_of_day
+        ORDER BY day_of_week, hour_of_day
+    """).df()

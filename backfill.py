@@ -22,7 +22,7 @@ def generate_month_ranges(start_year: int, end_year: int) -> list[tuple]:
 
 def month_already_fetched(year: int, month: int) -> bool:
     """Check if a Parquet file already exists for this year/month."""
-    path = os.path.join(RAW_DATA_PATH, f"year={year}", f"month={month:02d}", "data.parquet")
+    path = os.path.join(RAW_DATA_PATH, f"year={year}", f"month={month}", "data.parquet")
     return os.path.exists(path)
 
 
