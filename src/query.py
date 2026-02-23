@@ -1,18 +1,20 @@
+import os
 import duckdb
 import pandas as pd
 from src.config import RAW_DATA_PATH
 
+# Resolve path relative to project root, not the calling file
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+PARQUET_PATH = RAW_DATA_PATH
 
 def get_connection() -> duckdb.DuckDBPyConnection:
-    """Return a DuckDB connection pointed at our Parquet files."""
     conn = duckdb.connect()
     conn.execute(f"""
         CREATE OR REPLACE VIEW ridership AS
         SELECT *
-        FROM read_parquet('{RAW_DATA_PATH}/**/*.parquet', hive_partitioning=true)
+        FROM read_parquet('{PARQUET_PATH}/**/*.parquet', hive_partitioning=true)
     """)
     return conn
-
 
 def get_hourly_ridership(station: str = None, start: str = None, end: str = None) -> pd.DataFrame:
     """

@@ -3,9 +3,12 @@ import os
 
 load_dotenv()
 
+# Project root is always one level up from this file (src/)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 APP_TOKEN = os.getenv("SOCRATA_APP_TOKEN")
-RAW_DATA_PATH = os.getenv("RAW_DATA_PATH", "data/raw")
-CACHE_PATH = os.getenv("CACHE_PATH", "data/cache")
+RAW_DATA_PATH = os.path.join(PROJECT_ROOT, "data", "raw").replace("\\", "/")
+CACHE_PATH = os.path.join(PROJECT_ROOT, "data", "cache").replace("\\", "/")
 PAGE_SIZE = int(os.getenv("PAGE_SIZE", 50000))
 
 # Dataset endpoints
