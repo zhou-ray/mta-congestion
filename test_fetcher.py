@@ -1,3 +1,18 @@
-from src.pipeline import run_pipeline
+from src.query import (
+    get_hourly_ridership,
+    get_busiest_stations,
+    get_ridership_by_hour,
+    get_ridership_by_borough
+)
 
-run_pipeline(start_date="2024-01-01T00:00:00")
+print("=== Busiest Stations ===")
+print(get_busiest_stations())
+
+print("\n=== Ridership by Borough ===")
+print(get_ridership_by_borough())
+
+print("\n=== Ridership by Hour of Day ===")
+print(get_ridership_by_hour())
+
+print("\n=== Hourly Ridership - Grand Central ===")
+print(get_hourly_ridership(station="Grand Central-42 St (S,4,5,6,7)").head(10))
