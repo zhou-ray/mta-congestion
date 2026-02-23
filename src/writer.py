@@ -1,6 +1,7 @@
 import polars as pl
 import os
-from src.config import RAW_DATA_PATH
+import json
+from src.config import RAW_DATA_PATH, CACHE_PATH
 
 
 def write_partition(df: pl.DataFrame) -> None:
@@ -29,3 +30,23 @@ def write_partition(df: pl.DataFrame) -> None:
         filepath = os.path.join(path, "data.parquet")
         partition_df.write_parquet(filepath)
         print(f"Written {len(partition_df)} rows to {filepath}")
+    
+    # Update watermark to the latest timestamp in this batch
+    latest = df["transit_timestamp"].max()
+    set_watermark(str(latest))
+        
+def get_watermark() -> str | None:
+    """Read the last fetched timestamp from cache, or None if first run."""
+    path = os.path.join(CACHE_PATH, "watermark.json")
+    if not os.path.exists(path):
+        return None
+    with open(path, "r") as f:
+        return json.load(f)["last_timestamp"]
+
+def set_watermark(timestamp: str) -> None:
+    """Write the latest fetched timestamp to cache."""
+    os.makedirs(CACHE_PATH, exist_ok=True)
+    path = os.path.join(CACHE_PATH, "watermark.json")
+    with open(path, "w") as f:
+        json.dump({"last_timestamp": timestamp}, f)
+    print(f"Watermark updated to {timestamp}")

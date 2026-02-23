@@ -8,4 +8,6 @@ RAW_DATA_PATH = os.getenv("RAW_DATA_PATH", "data/raw")
 CACHE_PATH = os.getenv("CACHE_PATH", "data/cache")
 PAGE_SIZE = int(os.getenv("PAGE_SIZE", 50000))
 
-BASE_URL = "https://data.ny.gov/resource/wujg-7c2s.json"
+# Dataset endpoints
+HISTORICAL_URL = "https://data.ny.gov/resource/wujg-7c2s.json"  # 2020-2024
+CURRENT_URL = "https://data.ny.gov/resource/5wq4-mkjj.json"     # 2025+

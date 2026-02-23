@@ -1,10 +1,10 @@
 import requests
 import time
 import polars as pl
-from src.config import APP_TOKEN, BASE_URL, PAGE_SIZE
+from src.config import APP_TOKEN, PAGE_SIZE
 
 
-def fetch_page(offset: int, where_clause: str = None) -> list[dict]:
+def fetch_page(offset: int, url: str, where_clause: str = None) -> list[dict]:
     """Fetch a single page of results from the SODA API."""
     params = {
         "$limit": PAGE_SIZE,
@@ -16,12 +16,12 @@ def fetch_page(offset: int, where_clause: str = None) -> list[dict]:
     if APP_TOKEN:
         params["$$app_token"] = APP_TOKEN
 
-    response = requests.get(BASE_URL, params=params)
+    response = requests.get(url, params=params)
     response.raise_for_status()
     return response.json()
 
 
-def fetch_all(where_clause: str = None) -> pl.DataFrame:
+def fetch_all(url: str, where_clause: str = None) -> pl.DataFrame:
     """
     Paginate through the dataset and return a single Polars DataFrame.
     """
@@ -30,7 +30,7 @@ def fetch_all(where_clause: str = None) -> pl.DataFrame:
 
     while True:
         print(f"Fetching rows {offset} to {offset + PAGE_SIZE}...")
-        records = fetch_page(offset, where_clause)
+        records = fetch_page(offset, url, where_clause)
 
         if not records:
             break

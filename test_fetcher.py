@@ -1,16 +1,3 @@
-import duckdb
-import pandas
+from src.pipeline import run_pipeline
 
-conn = duckdb.connect()
-
-result = conn.execute("""
-    SELECT 
-        borough,
-        SUM(ridership) as total_ridership,
-        COUNT(*) as records
-    FROM read_parquet('data/raw/**/*.parquet', hive_partitioning=true)
-    GROUP BY borough
-    ORDER BY total_ridership DESC
-""").df()
-
-print(result)
+run_pipeline(start_date="2024-01-01T00:00:00")
