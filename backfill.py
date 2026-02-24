@@ -1,8 +1,24 @@
 import os
 from src.config import RAW_DATA_PATH, HISTORICAL_URL
-from src.fetcher import fetch_all, clean
+from src.fetcher import fetch_and_write, clean
 from src.writer import write_partition
 
+def backfill(start_year: int, end_year: int) -> None:
+    ranges = generate_month_ranges(start_year, end_year)
+    
+    for start, end in ranges:
+        year = int(start[:4])
+        month = int(start[5:7])
+
+        if month_already_fetched(year, month):
+            print(f"Skipping {start} — already fetched.")
+            continue
+
+        print(f"\n--- Fetching {start} to {end} ---")
+        where_clause = f"transit_timestamp >= '{start}' AND transit_timestamp < '{end}'"
+        
+        fetch_and_write(url=HISTORICAL_URL, where_clause=where_clause)
+        print(f"Done with {start} to {end}")
 # Each tuple is (start, end) for one month
 def generate_month_ranges(start_year: int, end_year: int) -> list[tuple]:
     ranges = []
@@ -25,12 +41,10 @@ def month_already_fetched(year: int, month: int) -> bool:
     path = os.path.join(RAW_DATA_PATH, f"year={year}", f"month={month}", "data.parquet")
     return os.path.exists(path)
 
-
 def backfill(start_year: int, end_year: int) -> None:
     ranges = generate_month_ranges(start_year, end_year)
     
     for start, end in ranges:
-        # Parse year and month from start string
         year = int(start[:4])
         month = int(start[5:7])
 
@@ -41,14 +55,7 @@ def backfill(start_year: int, end_year: int) -> None:
         print(f"\n--- Fetching {start} to {end} ---")
         where_clause = f"transit_timestamp >= '{start}' AND transit_timestamp < '{end}'"
         
-        df = fetch_all(url=HISTORICAL_URL, where_clause=where_clause)
-        
-        if df.is_empty():
-            print(f"No data for {start}, skipping.")
-            continue
-        
-        df = clean(df)
-        write_partition(df)
+        fetch_and_write(url=HISTORICAL_URL, where_clause=where_clause)
         print(f"Done with {start} to {end}")
         
 if __name__ == "__main__":
