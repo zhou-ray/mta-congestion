@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import holidays
 
 def add_time_features(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -68,32 +68,104 @@ def drop_nulls(df: pd.DataFrame) -> pd.DataFrame:
     feature_cols = ['lag_1', 'lag_24', 'lag_168', 'roll_mean_24', 'roll_mean_168', 'roll_std_24']
     return df.dropna(subset=feature_cols).reset_index(drop=True)
 
-def add_congestion_label(df: pd.DataFrame, threshold: float = 0.8, 
-                          horizon: int = 2, station_col: str = 'station_complex') -> pd.DataFrame:
+def add_congestion_label(df: pd.DataFrame, threshold: float = 0.8,
+                          horizon: int = 2, station_col: str = 'station_complex',
+                          precomputed_thresholds: dict = None) -> pd.DataFrame:
     """
     Add a binary congestion label for N hours ahead.
-    A station-hour is considered congested if ridership at 
-    horizon hours in the future exceeds the 80th percentile 
-    for that station.
     
-    horizon: how many hours ahead to predict (default 2)
+    If precomputed_thresholds is provided (a dict of station -> threshold value),
+    use those instead of computing from the current DataFrame. This prevents
+    data leakage when labeling a test set.
     """
     df = df.copy()
 
-    # Compute per-station congestion threshold on current ridership
-    df['congestion_threshold'] = df.groupby(station_col)['ridership'].transform(
-        lambda x: x.quantile(threshold)
+    if precomputed_thresholds:
+        df['congestion_threshold'] = df[station_col].map(precomputed_thresholds)
+    else:
+        df['congestion_threshold'] = df.groupby(station_col)['ridership'].transform(
+            lambda x: x.quantile(threshold)
+        )
+
+    df['future_ridership'] = df.groupby(station_col)['ridership'].shift(-horizon)
+    df['is_congested'] = (df['future_ridership'] >= df['congestion_threshold']).astype(int)
+    df = df.drop(columns=['congestion_threshold', 'future_ridership'])
+    df = df.dropna(subset=['is_congested']).reset_index(drop=True)
+
+    return df
+
+
+def compute_congestion_thresholds(df: pd.DataFrame, threshold: float = 0.8,
+                                   station_col: str = 'station_complex') -> dict:
+    """
+    Compute per-station congestion thresholds from a DataFrame.
+    Should be called on training data only, then passed to add_congestion_label
+    for both train and test sets.
+    """
+    return df.groupby(station_col)['ridership'].quantile(threshold).to_dict()
+
+def add_holiday_features(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    
+    # US federal holidays — include both Columbus Day and Indigenous Peoples Day
+    us_holidays = holidays.US(state='NY', years=range(2020, 2026))
+    
+    # Manually add Columbus Day / Indigenous Peoples Day for NY
+    # Second Monday of October
+    def get_columbus_day(year):
+        mondays = [d for d in pd.date_range(f'{year}-10-01', f'{year}-10-31') if d.dayofweek == 0]
+        return mondays[1].date()
+    
+    extra_holidays = set()
+    for year in range(2020, 2026):
+        extra_holidays.add(get_columbus_day(year))
+
+    all_holidays = set(us_holidays.keys()) | extra_holidays
+
+    df['is_holiday'] = df['transit_timestamp'].dt.date.apply(
+        lambda x: 1 if x in all_holidays else 0
     )
 
-    # Shift ridership backward by horizon to create future target
-    df['future_ridership'] = df.groupby(station_col)['ridership'].shift(-horizon)
+    holiday_dates = all_holidays
 
-    # Label is 1 if future ridership exceeds station's threshold
-    df['is_congested'] = (df['future_ridership'] >= df['congestion_threshold']).astype(int)
+    df['is_holiday_eve'] = df['transit_timestamp'].dt.date.apply(
+        lambda x: 1 if (pd.Timestamp(x) + pd.Timedelta(days=1)).date() in holiday_dates else 0
+    )
+    df['is_holiday_next'] = df['transit_timestamp'].dt.date.apply(
+        lambda x: 1 if (pd.Timestamp(x) - pd.Timedelta(days=1)).date() in holiday_dates else 0
+    )
 
-    df = df.drop(columns=['congestion_threshold', 'future_ridership'])
+    # NYC Marathon — first Sunday of November
+    def is_nyc_marathon(ts):
+        if ts.month != 11:
+            return 0
+        first_sunday = pd.Timestamp(year=ts.year, month=11, day=1)
+        while first_sunday.dayofweek != 6:
+            first_sunday += pd.Timedelta(days=1)
+        return 1 if ts.date() == first_sunday.date() else 0
 
-    # Drop rows where future is unknown (last N rows per station)
-    df = df.dropna(subset=['is_congested']).reset_index(drop=True)
+    df['is_nyc_marathon'] = df['transit_timestamp'].apply(is_nyc_marathon)
+
+    # Thanksgiving eve
+    def is_thanksgiving_eve(ts):
+        if ts.month != 11:
+            return 0
+        thursdays = [d for d in pd.date_range(f'{ts.year}-11-01', f'{ts.year}-11-30') if d.dayofweek == 3]
+        thanksgiving = thursdays[3]
+        thanksgiving_eve = thanksgiving - pd.Timedelta(days=1)
+        return 1 if ts.date() == thanksgiving_eve.date() else 0
+
+    df['is_thanksgiving_eve'] = df['transit_timestamp'].apply(is_thanksgiving_eve)
+
+    # Pre-Thanksgiving Saturday — Saturday before Thanksgiving week
+    def is_pre_thanksgiving_saturday(ts):
+        if ts.month != 11 or ts.dayofweek != 5:
+            return 0
+        thursdays = [d for d in pd.date_range(f'{ts.year}-11-01', f'{ts.year}-11-30') if d.dayofweek == 3]
+        thanksgiving = thursdays[3]
+        pre_sat = thanksgiving - pd.Timedelta(days=8)
+        return 1 if ts.date() == pre_sat.date() else 0
+
+    df['is_pre_thanksgiving_saturday'] = df['transit_timestamp'].apply(is_pre_thanksgiving_saturday)
 
     return df
