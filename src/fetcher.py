@@ -21,6 +21,50 @@ def fetch_page(offset: int, url: str, where_clause: str = None) -> list[dict]:
     return response.json()
 
 
+def fetch_and_write(url: str, where_clause: str = None) -> None:
+    """
+    Fetch data page by page and write to Parquet incrementally
+    rather than accumulating everything in memory.
+    """
+    from src.writer import write_partition
+    
+    offset = 0
+    chunk = []
+    CHUNK_SIZE = 200_000  # write to disk every 200k rows
+
+    while True:
+        print(f"Fetching rows {offset} to {offset + PAGE_SIZE}...")
+        records = fetch_page(offset, url, where_clause)
+
+        if not records:
+            break
+
+        chunk.extend(records)
+        offset += PAGE_SIZE
+
+        # Write chunk to disk and clear memory
+        if len(chunk) >= CHUNK_SIZE:
+            print(f"Writing chunk of {len(chunk)} rows...")
+            df = pl.DataFrame(chunk)
+            df = clean(df)
+            write_partition(df)
+            chunk = []  # free memory
+
+        if len(records) < PAGE_SIZE:
+            break
+
+        time.sleep(0.5)
+
+    # Write any remaining records
+    if chunk:
+        print(f"Writing final chunk of {len(chunk)} rows...")
+        df = pl.DataFrame(chunk)
+        df = clean(df)
+        write_partition(df)
+
+    print(f"Done. Total rows processed through offset {offset}")
+    
+
 def fetch_all(url: str, where_clause: str = None) -> pl.DataFrame:
     """
     Paginate through the dataset and return a single Polars DataFrame.
