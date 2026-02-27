@@ -13,14 +13,22 @@ from src.config import PROJECT_ROOT
 
 # Features the model will train on
 FEATURE_COLS = [
+    # Time features
     'hour', 'day_of_week', 'month', 'week_of_year',
     'is_weekend', 'is_shoulder_day',
     'day_mon', 'day_tue', 'day_wed', 'day_thu', 'day_fri', 'day_sat', 'day_sun',
     'hour_sin', 'hour_cos', 'month_sin', 'month_cos',
+    # Lag features
     'lag_1', 'lag_24', 'lag_168',
     'roll_mean_24', 'roll_mean_168', 'roll_std_24',
+    # Holiday features
     'is_holiday', 'is_holiday_eve', 'is_holiday_next',
-    'is_nyc_marathon', 'is_thanksgiving_eve', 'is_pre_thanksgiving_saturday'
+    'is_nyc_marathon', 'is_thanksgiving_eve', 'is_pre_thanksgiving_saturday',
+    # Station features
+    'num_lines', 'is_terminal', 'avg_ridership', 'std_ridership',
+    'max_ridership', 'station_tier',
+    'borough_manhattan', 'borough_brooklyn', 'borough_queens',
+    'borough_bronx', 'borough_staten_island'
 ]
 
 TARGET_COL = 'is_congested'
@@ -37,7 +45,7 @@ def prepare_features(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
 def train(X_train: pd.DataFrame, y_train: pd.Series) -> xgb.XGBClassifier:
     """Train an XGBoost classifier."""
     model = xgb.XGBClassifier(
-        n_estimators=300,
+        n_estimators=500,
         max_depth=6,
         learning_rate=0.05,
         subsample=0.8,
