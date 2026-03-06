@@ -84,7 +84,7 @@ if __name__ == "__main__":
     df, station_df = build_training_data(
         start='2023-01-01',
         end='2024-12-31',
-        sample_stations=sample
+        sample_stations=None
     )
 
     print(f"\nFull dataset shape: {df.shape}")
