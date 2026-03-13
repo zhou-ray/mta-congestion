@@ -78,17 +78,30 @@ def evaluate(model: xgb.XGBClassifier, X_test: pd.DataFrame, y_test: pd.Series) 
     }
 
 
-def save_model(model: xgb.XGBClassifier, filename: str = 'congestion_model.pkl') -> None:
-    """Save trained model to disk."""
-    os.makedirs(MODEL_PATH, exist_ok=True)
-    path = os.path.join(MODEL_PATH, filename)
+def save_model(model, filename: str) -> None:
+    """Save XGBoost model to disk."""
+    os.makedirs(MODELS_PATH, exist_ok=True)
+    path = os.path.join(MODELS_PATH, filename)
     with open(path, 'wb') as f:
         pickle.dump(model, f)
     print(f"Model saved to {path}")
+    
+def save_thresholds(thresholds: dict, filename: str = 'congestion_thresholds.pkl') -> None:
+    """Save per-station congestion thresholds to disk."""
+    os.makedirs(MODELS_PATH, exist_ok=True)
+    path = os.path.join(MODELS_PATH, filename)
+    with open(path, 'wb') as f:
+        pickle.dump(thresholds, f)
+    print(f"Thresholds saved to {path} ({len(thresholds)} stations)")
 
+def load_model(filename: str):
+    """Load XGBoost model from disk."""
+    path = os.path.join(MODELS_PATH, filename)
+    with open(path, 'rb') as f:
+        return pickle.load(f)
 
-def load_model(filename: str = 'congestion_model.pkl') -> xgb.XGBClassifier:
-    """Load a saved model from disk."""
-    path = os.path.join(MODEL_PATH, filename)
+def load_thresholds(filename: str = 'congestion_thresholds.pkl') -> dict:
+    """Load per-station congestion thresholds from disk."""
+    path = os.path.join(MODELS_PATH, filename)
     with open(path, 'rb') as f:
         return pickle.load(f)

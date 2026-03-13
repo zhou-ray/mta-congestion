@@ -6,7 +6,7 @@ from src.features import (
     compute_congestion_thresholds
 )
 from src.station_features import build_station_features, merge_station_features
-from src.model import prepare_features, train, evaluate, save_model
+from src.model import prepare_features, train, evaluate, save_model, save_thresholds
 import gc
 
 
@@ -100,6 +100,7 @@ if __name__ == "__main__":
 
     # Compute thresholds on 2023 train only
     thresholds = compute_congestion_thresholds(train_df)
+    save_thresholds(thresholds)
 
     # Label both sets with train thresholds
     train_df = add_congestion_label(train_df, horizon=2, precomputed_thresholds=thresholds)

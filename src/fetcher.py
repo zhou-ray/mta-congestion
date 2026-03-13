@@ -21,49 +21,56 @@ def fetch_page(offset: int, url: str, where_clause: str = None) -> list[dict]:
     return response.json()
 
 
-def fetch_and_write(url: str, where_clause: str = None) -> None:
+def fetch_and_write(url: str, where_clause: str = None, update_watermark: bool = True) -> None:
     """
-    Fetch data page by page and write to Parquet incrementally
-    rather than accumulating everything in memory.
+    Fetch data page by page and write to Parquet incrementally.
+    Only updates watermark at the end of the full ingest.
     """
-    from src.writer import write_partition
-    
+    from src.writer import write_partition_no_watermark, set_watermark
     offset = 0
     chunk = []
-    CHUNK_SIZE = 200_000  # write to disk every 200k rows
+    CHUNK_SIZE = 200_000
+    latest_timestamp = None
 
     while True:
         print(f"Fetching rows {offset} to {offset + PAGE_SIZE}...")
         records = fetch_page(offset, url, where_clause)
-
         if not records:
             break
-
         chunk.extend(records)
         offset += PAGE_SIZE
 
-        # Write chunk to disk and clear memory
         if len(chunk) >= CHUNK_SIZE:
             print(f"Writing chunk of {len(chunk)} rows...")
             df = pl.DataFrame(chunk)
             df = clean(df)
-            write_partition(df)
-            chunk = []  # free memory
+            # Track latest timestamp but don't update watermark yet
+            batch_latest = df["transit_timestamp"].max()
+            if latest_timestamp is None or batch_latest > latest_timestamp:
+                latest_timestamp = batch_latest
+            write_partition_no_watermark(df)
+            chunk = []
 
         if len(records) < PAGE_SIZE:
             break
-
         time.sleep(0.5)
 
-    # Write any remaining records
     if chunk:
         print(f"Writing final chunk of {len(chunk)} rows...")
         df = pl.DataFrame(chunk)
         df = clean(df)
-        write_partition(df)
+        batch_latest = df["transit_timestamp"].max()
+        if latest_timestamp is None or batch_latest > latest_timestamp:
+            latest_timestamp = batch_latest
+        write_partition_no_watermark(df)
+
+    # Update watermark once at the very end
+    if update_watermark and latest_timestamp is not None:
+        latest_iso = latest_timestamp.strftime("%Y-%m-%dT%H:%M:%S")
+        set_watermark(latest_iso)
+        print(f"Watermark updated to {latest_iso}")
 
     print(f"Done. Total rows processed through offset {offset}")
-    
 
 def fetch_all(url: str, where_clause: str = None) -> pl.DataFrame:
     """
