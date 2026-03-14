@@ -105,34 +105,27 @@ def compute_congestion_thresholds(df: pd.DataFrame, threshold: float = 0.8,
     return df.groupby(station_col)['ridership'].quantile(threshold).to_dict()
 
 def add_holiday_features(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Add NYC-specific holiday and special event flags.
+    Includes federal holidays, holiday eve/next day, NYC Marathon,
+    Thanksgiving Eve, and pre-Thanksgiving Saturday.
+    """
     df = df.copy()
     
     # US federal holidays — include both Columbus Day and Indigenous Peoples Day
-    us_holidays = holidays.US(state='NY', years=range(2020, 2026))
-    
-    # Manually add Columbus Day / Indigenous Peoples Day for NY
-    # Second Monday of October
-    def get_columbus_day(year):
-        mondays = [d for d in pd.date_range(f'{year}-10-01', f'{year}-10-31') if d.dayofweek == 0]
-        return mondays[1].date()
-    
-    extra_holidays = set()
-    for year in range(2020, 2026):
-        extra_holidays.add(get_columbus_day(year))
+    us_holidays = holidays.US(state='NY', years=range(2020, 2027))
 
-    all_holidays = set(us_holidays.keys()) | extra_holidays
-
+    all_holidays = set(us_holidays.keys())
+    
     df['is_holiday'] = df['transit_timestamp'].dt.date.apply(
         lambda x: 1 if x in all_holidays else 0
     )
 
-    holiday_dates = all_holidays
-
     df['is_holiday_eve'] = df['transit_timestamp'].dt.date.apply(
-        lambda x: 1 if (pd.Timestamp(x) + pd.Timedelta(days=1)).date() in holiday_dates else 0
+        lambda x: 1 if (pd.Timestamp(x) + pd.Timedelta(days=1)).date() in all_holidays else 0
     )
     df['is_holiday_next'] = df['transit_timestamp'].dt.date.apply(
-        lambda x: 1 if (pd.Timestamp(x) - pd.Timedelta(days=1)).date() in holiday_dates else 0
+        lambda x: 1 if (pd.Timestamp(x) - pd.Timedelta(days=1)).date() in all_holidays else 0
     )
 
     # NYC Marathon — first Sunday of November

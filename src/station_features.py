@@ -26,10 +26,9 @@ def get_terminal_stations() -> set:
     """
     return {
         'Flushing-Main St (7)',
-        '207 St (A)',
+        'Inwood-207 St (A)',
         'Far Rockaway-Mott Av (A)',
         'Rockaway Park-Beach 116 St (A,S)',
-        'Lefferts Blvd (A)',
         'Pelham Bay Park (6)',
         'Wakefield-241 St (2)',
         'Flatbush Av-Brooklyn College (2,5)',
@@ -41,8 +40,6 @@ def get_terminal_stations() -> set:
         'Jamaica-179 St (F)',
         'Jamaica Center-Parsons/Archer (E,J,Z)',
         'Norwood-205 St (D)',
-        'Wakefield-241 St (2)',
-        '241 St (2)',
         'New Lots Av (3)',
         'Eastchester-Dyre Av (5)',
         'Nereid Av (2,5)',
@@ -51,7 +48,6 @@ def get_terminal_stations() -> set:
         'Howard Beach-JFK Airport (A)',
         'Forest Hills-71 Av (E,F,M,R)',
         'Jamaica-Van Wyck (E)',
-        'Richmond Hill (A)',
     }
 
 

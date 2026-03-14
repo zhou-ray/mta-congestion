@@ -3,8 +3,9 @@ import duckdb
 import pandas as pd
 from src.config import RAW_DATA_PATH
 
+# Note: parameters are not sanitized — safe for internal use only
+
 # Resolve path relative to project root, not the calling file
-BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 PARQUET_PATH = RAW_DATA_PATH
 
 def get_connection() -> duckdb.DuckDBPyConnection:
