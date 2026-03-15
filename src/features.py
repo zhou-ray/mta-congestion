@@ -161,4 +161,11 @@ def add_holiday_features(df: pd.DataFrame) -> pd.DataFrame:
 
     df['is_pre_thanksgiving_saturday'] = df['transit_timestamp'].apply(is_pre_thanksgiving_saturday)
 
+    holiday_cols = [
+    'is_holiday', 'is_holiday_eve', 'is_holiday_next',
+    'is_nyc_marathon', 'is_thanksgiving_eve', 'is_pre_thanksgiving_saturday'
+]
+    for col in holiday_cols:
+        df[col] = df[col].astype(int)
+
     return df

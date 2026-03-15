@@ -32,7 +32,7 @@ FEATURE_COLS = [
 ]
 
 TARGET_COL = 'is_congested'
-MODEL_PATH = os.path.join(PROJECT_ROOT, 'data', 'models')
+MODELS_PATH = os.path.join(PROJECT_ROOT, 'data', 'models')
 
 
 def prepare_features(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.Series]:
