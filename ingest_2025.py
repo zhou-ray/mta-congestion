@@ -12,8 +12,9 @@ def ingest_2025(start_date: str = '2025-01-01'):
     watermark = get_watermark()
 
     if watermark:
-        where_clause = f"transit_timestamp > '{watermark}'"
-        print(f"Incremental update from {watermark}...")
+        ts = watermark.replace(' ', 'T')
+        where_clause = f"transit_timestamp > '{ts}'"
+        print(f"Incremental update from {ts}...")
     else:
         where_clause = f"transit_timestamp >= '{start_date}'"
         print(f"Full ingest from {start_date}...")
