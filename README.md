@@ -6,6 +6,13 @@ A machine learning pipeline that predicts NYC subway station congestion 2 hours 
 
 ---
 
+## Interactive Visualizations
+
+- [Congestion Map](https://zhou-ray.github.io/mta-congestion/visualizations/map.html) — all 428 stations with filters for borough, tier, and train line
+- [Congestion Animation](https://zhou-ray.github.io/mta-congestion/visualizations/animation.html) — hourly ridership animated across the system
+
+---
+
 ## Demo
 
 ![Congestion Heatmap](visualizations/1_congestion_heatmap.png)
