@@ -64,11 +64,21 @@ def build_station_features() -> pd.DataFrame:
             station_complex,
             station_complex_id,
             borough,
-            AVG(ridership) as avg_ridership,
-            STDDEV(ridership) as std_ridership,
-            MAX(ridership) as max_ridership,
+            AVG(hourly_ridership) as avg_ridership,
+            STDDEV(hourly_ridership) as std_ridership,
+            MAX(hourly_ridership) as max_ridership,
             COUNT(DISTINCT DATE_TRUNC('month', transit_timestamp)) as months_of_data
-        FROM ridership
+        FROM (
+            SELECT
+                station_complex,
+                station_complex_id,
+                borough,
+                transit_timestamp,
+                SUM(ridership) as hourly_ridership
+            FROM ridership
+            WHERE year IN (2023, 2024)
+            GROUP BY station_complex, station_complex_id, borough, transit_timestamp
+        ) hourly
         GROUP BY station_complex, station_complex_id, borough
     """).df()
 
