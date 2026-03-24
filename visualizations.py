@@ -14,6 +14,45 @@ os.makedirs(OUTPUT_PATH, exist_ok=True)
 
 DAY_LABELS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 
+def load_2025_eval_data():
+    """Load 2025+ data with actual congestion labels for comparison visualizations."""
+    import gc
+    print("Loading 2025 evaluation data...")
+    station_df = build_station_features()
+    thresholds = load_thresholds()
+    model = load_model('global_congestion_model.pkl')
+
+    months = pd.date_range(start='2025-01-01', end='2026-02-01', freq='MS')
+    all_dfs = []
+
+    for month_start in months:
+        month_end = month_start + pd.offsets.MonthEnd(1)
+        month_end_str = (month_end + pd.Timedelta(days=1)).strftime('%Y-%m-%d')
+        month_start_str = month_start.strftime('%Y-%m-%d')
+        print(f"  {month_start_str}...")
+
+        df = get_hourly_ridership(start=month_start_str, end=month_end_str)
+        if df.empty:
+            continue
+        df = add_time_features(df)
+        df = add_lag_features(df)
+        df = drop_nulls(df)
+        df = add_holiday_features(df)
+        df = merge_station_features(df, station_df)
+        all_dfs.append(df)
+        gc.collect()
+
+    full_df = pd.concat(all_dfs, ignore_index=True)
+    full_df = full_df.sort_values(['station_complex', 'transit_timestamp']).reset_index(drop=True)
+    full_df = add_congestion_label(full_df, horizon=2, precomputed_thresholds=thresholds)
+
+    X, y = prepare_features(full_df)
+    full_df['predicted_prob'] = model.predict_proba(X)[:, 1]
+    full_df['predicted'] = model.predict(X)
+    full_df['actual'] = y.values
+
+    print(f"  Loaded {len(full_df):,} rows across {full_df['station_complex'].nunique()} stations")
+    return full_df
 
 def load_2024_data():
     """Load and prepare 2024 validation data for visualizations."""
@@ -512,12 +551,194 @@ def export_animation_data():
     print(f"  Daily: {len(daily_data)} stations x 24 hours")
     print(f"  Week: {len(week_out)} timestamps x ~{len(week_raw) // max(len(week_out),1)} stations")
     
+def plot_predicted_vs_actual_by_hour(df: pd.DataFrame):
+    print("Plotting predicted vs actual by hour...")
+
+    # Normalize ridership per station first
+    df = df.copy()
+    df['ridership_norm'] = df.groupby('station_complex')['ridership'].transform(
+        lambda x: (x - x.min()) / (x.max() - x.min() + 1e-6)
+    )
+
+    hourly = df.groupby('hour').agg(
+        predicted=('predicted_prob', 'mean'),
+        actual=('ridership_norm', 'mean')
+    ).reset_index()
+
+    # Scale predicted to same range as actual for visual comparison
+    pred_min, pred_max = hourly['predicted'].min(), hourly['predicted'].max()
+    act_min, act_max = hourly['actual'].min(), hourly['actual'].max()
+    hourly['predicted_scaled'] = (hourly['predicted'] - pred_min) / (pred_max - pred_min) * (act_max - act_min) + act_min
+
+    fig, ax = plt.subplots(figsize=(12, 5))
+    ax.plot(hourly['hour'], hourly['predicted_scaled'], color='#185FA5',
+            linewidth=2.5, marker='o', markersize=5, label='Predicted pattern (scaled)')
+    ax.plot(hourly['hour'], hourly['actual'], color='#E24B4A',
+            linewidth=2.5, marker='o', markersize=5, label='Actual ridership pattern', linestyle='--')
+
+    ax.set_xticks(range(24))
+    ax.set_xticklabels([f'{h}:00' for h in range(24)], rotation=45, ha='right', fontsize=8)
+    ax.set_ylabel('Normalized score', fontsize=11)
+    ax.set_title('Model correctly identifies AM and PM rush hours — predictions lead actual by ~2 hours\n'
+             'Predicted pattern vs actual ridership by hour of day — 2025+',
+             fontsize=11, pad=15)
+    ax.legend(fontsize=10)
+    ax.grid(axis='y', alpha=0.3)
+    ax.annotate('2-hour prediction\nhorizon offset',
+            xy=(7, 0.21), xytext=(9, 0.32),
+            arrowprops=dict(arrowstyle='->', color='gray'),
+            fontsize=9, color='gray')
+
+    # Annotate the peaks
+    peak_pred = hourly['predicted_scaled'].idxmax()
+    peak_act = hourly['actual'].idxmax()
+    ax.annotate(f'Predicted peak: {hourly["hour"][peak_pred]}:00',
+                xy=(hourly['hour'][peak_pred], hourly['predicted_scaled'][peak_pred]),
+                xytext=(hourly['hour'][peak_pred] + 1, hourly['predicted_scaled'][peak_pred] + 0.01),
+                fontsize=9, color='#185FA5')
+    ax.annotate(f'Actual peak: {hourly["hour"][peak_act]}:00',
+                xy=(hourly['hour'][peak_act], hourly['actual'][peak_act]),
+                xytext=(hourly['hour'][peak_act] + 1, hourly['actual'][peak_act] - 0.02),
+                fontsize=9, color='#E24B4A')
+
+    plt.tight_layout()
+    path = os.path.join(OUTPUT_PATH, '6_predicted_vs_actual_hour.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"  Saved to {path}")
+
+def plot_predicted_vs_actual_by_borough(df: pd.DataFrame):
+    """Bar chart: predicted vs actual AUC by borough."""
+    print("Plotting predicted vs actual by borough...")
+    from sklearn.metrics import roc_auc_score
+
+    borough_cols = {
+        'Manhattan': 'borough_manhattan',
+        'Brooklyn': 'borough_brooklyn',
+        'Queens': 'borough_queens',
+        'Bronx': 'borough_bronx',
+        'Staten Island': 'borough_staten_island'
+    }
+
+    results = []
+    for borough, col in borough_cols.items():
+        subset = df[df[col] == 1]
+        if len(subset) == 0 or subset['actual'].nunique() < 2:
+            continue
+        auc = roc_auc_score(subset['actual'], subset['predicted_prob'])
+        results.append({'borough': borough, 'auc': auc, 'n': len(subset)})
+
+    results_df = pd.DataFrame(results).sort_values('auc')
+    colors = ['#185FA5' if a >= 0.97 else '#EF9F27' if a >= 0.95 else '#E24B4A'
+              for a in results_df['auc']]
+
+    fig, ax = plt.subplots(figsize=(9, 5))
+    bars = ax.bar(range(len(results_df)), results_df['auc'], color=colors, alpha=0.85)
+
+    ax.set_xticks(range(len(results_df)))
+    ax.set_xticklabels(results_df['borough'], fontsize=11)
+    ax.set_ylim(0.90, 1.0)
+    ax.set_ylabel('ROC-AUC Score', fontsize=11)
+    ax.set_title('Model AUC by Borough on 2025+ Data', fontsize=13, pad=15)
+    ax.axhline(y=0.95, color='gray', linewidth=0.8, linestyle='--', alpha=0.5)
+
+    for bar, auc in zip(bars, results_df['auc']):
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.001,
+                f'{auc:.4f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+    plt.tight_layout()
+    path = os.path.join(OUTPUT_PATH, '7_auc_by_borough.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"  Saved to {path}")
+
+
+def plot_calibration_curve(df: pd.DataFrame):
+    """Calibration curve: when model says X%, does it happen X% of the time?"""
+    print("Plotting calibration curve...")
+    from sklearn.calibration import calibration_curve
+
+    prob_true, prob_pred = calibration_curve(
+        df['actual'], df['predicted_prob'], n_bins=10, strategy='uniform'
+    )
+
+    fig, ax = plt.subplots(figsize=(7, 7))
+    ax.plot([0, 1], [0, 1], 'k--', linewidth=1, alpha=0.5, label='Perfect calibration')
+    ax.plot(prob_pred, prob_true, color='#185FA5', linewidth=2,
+            marker='o', markersize=8, label='Model calibration')
+
+    ax.fill_between(prob_pred, prob_true, prob_pred,
+                    alpha=0.1, color='#185FA5')
+
+    ax.set_xlabel('Mean Predicted Probability', fontsize=11)
+    ax.set_ylabel('Fraction of Positives (Actual Rate)', fontsize=11)
+    ax.set_title('Calibration Curve — 2025+ Data\n(closer to diagonal = better calibrated)',
+                 fontsize=12, pad=15)
+    ax.legend(fontsize=10)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1)
+    ax.grid(alpha=0.3)
+
+    plt.tight_layout()
+    path = os.path.join(OUTPUT_PATH, '8_calibration_curve.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"  Saved to {path}")
+
+
+def plot_performance_over_time(df: pd.DataFrame):
+    """Line chart: monthly AUC from Jan 2025 to Feb 2026."""
+    print("Plotting performance over time...")
+    from sklearn.metrics import roc_auc_score
+
+    df['year_month'] = df['transit_timestamp'].dt.to_period('M')
+    months = sorted(df['year_month'].unique())
+
+    results = []
+    for month in months:
+        subset = df[df['year_month'] == month]
+        if len(subset) < 1000 or subset['actual'].nunique() < 2:
+            continue
+        auc = roc_auc_score(subset['actual'], subset['predicted_prob'])
+        results.append({'month': str(month), 'auc': auc, 'n': len(subset)})
+
+    results_df = pd.DataFrame(results)
+
+    fig, ax = plt.subplots(figsize=(12, 5))
+    ax.plot(range(len(results_df)), results_df['auc'],
+            color='#185FA5', linewidth=2, marker='o', markersize=6)
+    ax.fill_between(range(len(results_df)), results_df['auc'],
+                    0.90, alpha=0.1, color='#185FA5')
+
+    ax.set_xticks(range(len(results_df)))
+    ax.set_xticklabels(results_df['month'], rotation=45, ha='right', fontsize=9)
+    ax.set_ylim(0.90, 1.0)
+    ax.set_ylabel('ROC-AUC Score', fontsize=11)
+    ax.set_title('Model Performance Over Time — Monthly AUC on 2025+ Data\n(trained on 2023 only)',
+                 fontsize=12, pad=15)
+    ax.axhline(y=results_df['auc'].mean(), color='gray', linewidth=1,
+               linestyle='--', alpha=0.7, label=f'Mean AUC: {results_df["auc"].mean():.4f}')
+    ax.legend(fontsize=10)
+    ax.grid(axis='y', alpha=0.3)
+
+    plt.tight_layout()
+    path = os.path.join(OUTPUT_PATH, '9_performance_over_time.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f"  Saved to {path}")
+    
 if __name__ == "__main__":
-    df = load_2024_data()
-    plot_congestion_heatmap(df)
-    plot_drift_chart(df)
-    plot_feature_importance()
-    plot_performance_progression()
-    plot_borough_performance(df)
-    export_station_map_data(df)
-    export_animation_data()
+    # df_2024 = load_2024_data()
+    # plot_congestion_heatmap(df_2024)
+    # plot_drift_chart(df_2024)
+    # plot_feature_importance()
+    # plot_performance_progression()
+    # plot_borough_performance(df_2024)
+    # export_station_map_data(df_2024)
+    # export_animation_data()
+
+    df_2025 = load_2025_eval_data()
+    plot_predicted_vs_actual_by_hour(df_2025)
+    plot_predicted_vs_actual_by_borough(df_2025)
+    plot_calibration_curve(df_2025)
+    plot_performance_over_time(df_2025)

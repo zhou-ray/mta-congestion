@@ -5,7 +5,7 @@
     "lon": -73.98163,
     "congestion_rate": 0.2538,
     "drift": 0.0538,
-    "auc": 0.9762,
+    "auc": 0.973,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -16,7 +16,7 @@
     "lon": -73.96838,
     "congestion_rate": 0.1953,
     "drift": -0.0053,
-    "auc": 0.9743,
+    "auc": 0.9552,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -27,7 +27,7 @@
     "lon": -73.94748,
     "congestion_rate": 0.1862,
     "drift": -0.0145,
-    "auc": 0.985,
+    "auc": 0.9856,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -38,7 +38,7 @@
     "lon": -73.96146,
     "congestion_rate": 0.2306,
     "drift": 0.0284,
-    "auc": 0.9636,
+    "auc": 0.9318,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -49,7 +49,7 @@
     "lon": -73.8627,
     "congestion_rate": 0.1977,
     "drift": -0.0025,
-    "auc": 0.9881,
+    "auc": 0.9629,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -60,7 +60,7 @@
     "lon": -73.83769,
     "congestion_rate": 0.2045,
     "drift": 0.004,
-    "auc": 0.9699,
+    "auc": 0.9043,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -71,7 +71,7 @@
     "lon": -73.84433,
     "congestion_rate": 0.1992,
     "drift": -0.003,
-    "auc": 0.9813,
+    "auc": 0.8817,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -82,7 +82,7 @@
     "lon": -73.94425,
     "congestion_rate": 0.2,
     "drift": -0.0007,
-    "auc": 0.984,
+    "auc": 0.9786,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -93,7 +93,7 @@
     "lon": -73.85533,
     "congestion_rate": 0.1832,
     "drift": -0.0178,
-    "auc": 0.9482,
+    "auc": 0.9255,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -104,7 +104,7 @@
     "lon": -73.83216,
     "congestion_rate": 0.1977,
     "drift": -0.0023,
-    "auc": 0.9625,
+    "auc": 0.8862,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -115,7 +115,7 @@
     "lon": -73.83634,
     "congestion_rate": 0.2302,
     "drift": 0.0255,
-    "auc": 0.9625,
+    "auc": 0.922,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -126,7 +126,7 @@
     "lon": -73.94962,
     "congestion_rate": 0.1818,
     "drift": -0.0194,
-    "auc": 0.974,
+    "auc": 0.9459,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -137,7 +137,7 @@
     "lon": -73.94162,
     "congestion_rate": 0.1994,
     "drift": -0.001,
-    "auc": 0.981,
+    "auc": 0.9781,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -148,7 +148,7 @@
     "lon": -73.95488,
     "congestion_rate": 0.202,
     "drift": 0.0012,
-    "auc": 0.9724,
+    "auc": 0.9442,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -159,9 +159,9 @@
     "lon": -73.96411,
     "congestion_rate": 0.1999,
     "drift": -0.0005,
-    "auc": 0.9758,
+    "auc": 0.9566,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -170,7 +170,7 @@
     "lon": -73.82829,
     "congestion_rate": 0.1818,
     "drift": -0.0221,
-    "auc": 0.9652,
+    "auc": 0.9685,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -181,7 +181,7 @@
     "lon": -73.95837,
     "congestion_rate": 0.2203,
     "drift": 0.0203,
-    "auc": 0.9656,
+    "auc": 0.9652,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -192,7 +192,7 @@
     "lon": -73.9455,
     "congestion_rate": 0.2693,
     "drift": 0.0688,
-    "auc": 0.9623,
+    "auc": 0.9663,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -203,7 +203,7 @@
     "lon": -73.93759,
     "congestion_rate": 0.2332,
     "drift": 0.0324,
-    "auc": 0.9909,
+    "auc": 0.981,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -214,7 +214,7 @@
     "lon": -73.95235,
     "congestion_rate": 0.2251,
     "drift": 0.025,
-    "auc": 0.9892,
+    "auc": 0.9825,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -225,7 +225,7 @@
     "lon": -73.94077,
     "congestion_rate": 0.2193,
     "drift": 0.0192,
-    "auc": 0.9837,
+    "auc": 0.9809,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -236,7 +236,7 @@
     "lon": -73.94765,
     "congestion_rate": 0.2189,
     "drift": 0.0172,
-    "auc": 0.9786,
+    "auc": 0.9773,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -247,7 +247,7 @@
     "lon": -73.95367,
     "congestion_rate": 0.1871,
     "drift": -0.0134,
-    "auc": 0.971,
+    "auc": 0.9568,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -258,7 +258,7 @@
     "lon": -73.92985,
     "congestion_rate": 0.2352,
     "drift": 0.0345,
-    "auc": 0.967,
+    "auc": 0.9651,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -269,7 +269,7 @@
     "lon": -74.00173,
     "congestion_rate": 0.2398,
     "drift": 0.0398,
-    "auc": 0.9913,
+    "auc": 0.9825,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -280,7 +280,7 @@
     "lon": -73.99656,
     "congestion_rate": 0.1696,
     "drift": -0.0306,
-    "auc": 0.9856,
+    "auc": 0.9815,
     "num_lines": 6,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -291,7 +291,7 @@
     "lon": -73.98997,
     "congestion_rate": 0.2267,
     "drift": 0.0266,
-    "auc": 0.9905,
+    "auc": 0.9828,
     "num_lines": 8,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -302,7 +302,7 @@
     "lon": -73.95036,
     "congestion_rate": 0.1932,
     "drift": -0.0098,
-    "auc": 0.9603,
+    "auc": 0.9165,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -313,7 +313,7 @@
     "lon": -73.93625,
     "congestion_rate": 0.1977,
     "drift": -0.0023,
-    "auc": 0.9675,
+    "auc": 0.9248,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -324,7 +324,7 @@
     "lon": -73.94421,
     "congestion_rate": 0.2367,
     "drift": 0.0367,
-    "auc": 0.9779,
+    "auc": 0.9637,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -335,7 +335,7 @@
     "lon": -73.92735,
     "congestion_rate": 0.205,
     "drift": 0.0043,
-    "auc": 0.9805,
+    "auc": 0.9733,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Bronx"
@@ -346,7 +346,7 @@
     "lon": -73.97949,
     "congestion_rate": 0.2054,
     "drift": 0.0025,
-    "auc": 0.9816,
+    "auc": 0.9587,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -357,7 +357,7 @@
     "lon": -73.93821,
     "congestion_rate": 0.1772,
     "drift": -0.0242,
-    "auc": 0.9821,
+    "auc": 0.9323,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -368,7 +368,7 @@
     "lon": -73.94151,
     "congestion_rate": 0.2281,
     "drift": 0.027,
-    "auc": 0.9501,
+    "auc": 0.9102,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -379,7 +379,7 @@
     "lon": -73.94489,
     "congestion_rate": 0.193,
     "drift": -0.0085,
-    "auc": 0.97,
+    "auc": 0.9492,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -390,7 +390,7 @@
     "lon": -73.92566,
     "congestion_rate": 0.2477,
     "drift": 0.047,
-    "auc": 0.9613,
+    "auc": 0.9556,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Bronx"
@@ -401,7 +401,7 @@
     "lon": -73.9399,
     "congestion_rate": 0.2454,
     "drift": 0.0419,
-    "auc": 0.9688,
+    "auc": 0.9343,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -412,7 +412,7 @@
     "lon": -73.9214,
     "congestion_rate": 0.152,
     "drift": -0.0492,
-    "auc": 0.9741,
+    "auc": 0.9365,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -423,7 +423,7 @@
     "lon": -73.91844,
     "congestion_rate": 0.1703,
     "drift": -0.0305,
-    "auc": 0.9857,
+    "auc": 0.9704,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -434,7 +434,7 @@
     "lon": -73.93958,
     "congestion_rate": 0.197,
     "drift": -0.0032,
-    "auc": 0.9937,
+    "auc": 0.9889,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -445,9 +445,9 @@
     "lon": -73.7936,
     "congestion_rate": 0.2238,
     "drift": 0.0234,
-    "auc": 0.9749,
+    "auc": 0.9674,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Queens"
   },
   {
@@ -456,7 +456,7 @@
     "lon": -73.91779,
     "congestion_rate": 0.1802,
     "drift": -0.0202,
-    "auc": 0.9842,
+    "auc": 0.9749,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -467,7 +467,7 @@
     "lon": -73.9134,
     "congestion_rate": 0.1778,
     "drift": -0.0225,
-    "auc": 0.9855,
+    "auc": 0.9653,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -478,7 +478,7 @@
     "lon": -73.88773,
     "congestion_rate": 0.1784,
     "drift": -0.0221,
-    "auc": 0.9874,
+    "auc": 0.9738,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -489,7 +489,7 @@
     "lon": -73.91013,
     "congestion_rate": 0.1748,
     "drift": -0.0282,
-    "auc": 0.9791,
+    "auc": 0.9789,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -500,7 +500,7 @@
     "lon": -73.93971,
     "congestion_rate": 0.185,
     "drift": -0.0169,
-    "auc": 0.9715,
+    "auc": 0.9539,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -511,7 +511,7 @@
     "lon": -73.9118,
     "congestion_rate": 0.2044,
     "drift": 0.0033,
-    "auc": 0.9808,
+    "auc": 0.9619,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -522,7 +522,7 @@
     "lon": -74.00174,
     "congestion_rate": 0.2408,
     "drift": 0.0381,
-    "auc": 0.9607,
+    "auc": 0.8901,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -533,7 +533,7 @@
     "lon": -73.97697,
     "congestion_rate": 0.1633,
     "drift": -0.0384,
-    "auc": 0.9714,
+    "auc": 0.9573,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -544,7 +544,7 @@
     "lon": -73.99042,
     "congestion_rate": 0.1646,
     "drift": -0.0356,
-    "auc": 0.9795,
+    "auc": 0.959,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -555,7 +555,7 @@
     "lon": -73.99787,
     "congestion_rate": 0.1981,
     "drift": -0.002,
-    "auc": 0.9866,
+    "auc": 0.9746,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -566,7 +566,7 @@
     "lon": -73.93359,
     "congestion_rate": 0.1603,
     "drift": -0.0412,
-    "auc": 0.9681,
+    "auc": 0.9567,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -577,7 +577,7 @@
     "lon": -73.93797,
     "congestion_rate": 0.2998,
     "drift": 0.0974,
-    "auc": 0.9501,
+    "auc": 0.9128,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -588,7 +588,7 @@
     "lon": -73.90074,
     "congestion_rate": 0.1836,
     "drift": -0.0189,
-    "auc": 0.9852,
+    "auc": 0.9491,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -599,7 +599,7 @@
     "lon": -73.90388,
     "congestion_rate": 0.1639,
     "drift": -0.0378,
-    "auc": 0.9808,
+    "auc": 0.9267,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -610,7 +610,7 @@
     "lon": -73.93418,
     "congestion_rate": 0.2013,
     "drift": -0.0002,
-    "auc": 0.9634,
+    "auc": 0.9246,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -621,9 +621,9 @@
     "lon": -73.92941,
     "congestion_rate": 0.1776,
     "drift": -0.024,
-    "auc": 0.9831,
+    "auc": 0.9472,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Manhattan"
   },
   {
@@ -632,7 +632,7 @@
     "lon": -73.98994,
     "congestion_rate": 0.212,
     "drift": 0.0101,
-    "auc": 0.967,
+    "auc": 0.9168,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -643,7 +643,7 @@
     "lon": -73.99817,
     "congestion_rate": 0.2387,
     "drift": 0.037,
-    "auc": 0.9483,
+    "auc": 0.851,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -654,7 +654,7 @@
     "lon": -73.98502,
     "congestion_rate": 0.2163,
     "drift": 0.0153,
-    "auc": 0.9512,
+    "auc": 0.9078,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -665,7 +665,7 @@
     "lon": -73.91882,
     "congestion_rate": 0.1519,
     "drift": -0.0482,
-    "auc": 0.9697,
+    "auc": 0.9635,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -676,7 +676,7 @@
     "lon": -73.94972,
     "congestion_rate": 0.2212,
     "drift": 0.0207,
-    "auc": 0.9472,
+    "auc": 0.7772,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -687,7 +687,7 @@
     "lon": -73.94283,
     "congestion_rate": 0.2601,
     "drift": 0.0601,
-    "auc": 0.9715,
+    "auc": 0.9614,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -698,7 +698,7 @@
     "lon": -73.91528,
     "congestion_rate": 0.2134,
     "drift": 0.011,
-    "auc": 0.9658,
+    "auc": 0.957,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -709,7 +709,7 @@
     "lon": -73.86263,
     "congestion_rate": 0.1642,
     "drift": -0.0367,
-    "auc": 0.9673,
+    "auc": 0.9439,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -720,7 +720,7 @@
     "lon": -73.86034,
     "congestion_rate": 0.193,
     "drift": -0.0137,
-    "auc": 0.976,
+    "auc": 0.922,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -731,9 +731,9 @@
     "lon": -73.99566,
     "congestion_rate": 0.2177,
     "drift": 0.0171,
-    "auc": 0.9888,
+    "auc": 0.9767,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -742,7 +742,7 @@
     "lon": -73.9866,
     "congestion_rate": 0.217,
     "drift": 0.0166,
-    "auc": 0.9839,
+    "auc": 0.9659,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -753,7 +753,7 @@
     "lon": -73.99804,
     "congestion_rate": 0.2451,
     "drift": 0.045,
-    "auc": 0.9904,
+    "auc": 0.9854,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -764,7 +764,7 @@
     "lon": -73.99282,
     "congestion_rate": 0.2251,
     "drift": 0.0251,
-    "auc": 0.9919,
+    "auc": 0.9915,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -775,7 +775,7 @@
     "lon": -73.98934,
     "congestion_rate": 0.2151,
     "drift": 0.0147,
-    "auc": 0.9915,
+    "auc": 0.9812,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -786,7 +786,7 @@
     "lon": -73.90483,
     "congestion_rate": 0.1693,
     "drift": -0.0308,
-    "auc": 0.9908,
+    "auc": 0.9872,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -797,7 +797,7 @@
     "lon": -73.85747,
     "congestion_rate": 0.1433,
     "drift": -0.06,
-    "auc": 0.9752,
+    "auc": 0.9421,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -808,7 +808,7 @@
     "lon": -73.90087,
     "congestion_rate": 0.1778,
     "drift": -0.0245,
-    "auc": 0.9744,
+    "auc": 0.9598,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -819,9 +819,9 @@
     "lon": -73.98683,
     "congestion_rate": 0.1877,
     "drift": -0.0127,
-    "auc": 0.9735,
+    "auc": 0.9129,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -830,7 +830,7 @@
     "lon": -73.99809,
     "congestion_rate": 0.2151,
     "drift": 0.0132,
-    "auc": 0.9767,
+    "auc": 0.974,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -841,7 +841,7 @@
     "lon": -73.99336,
     "congestion_rate": 0.2248,
     "drift": 0.0239,
-    "auc": 0.9669,
+    "auc": 0.95,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -852,7 +852,7 @@
     "lon": -73.98426,
     "congestion_rate": 0.2254,
     "drift": 0.025,
-    "auc": 0.9937,
+    "auc": 0.9931,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -863,7 +863,7 @@
     "lon": -73.98869,
     "congestion_rate": 0.2531,
     "drift": 0.053,
-    "auc": 0.974,
+    "auc": 0.9462,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -874,7 +874,7 @@
     "lon": -73.98612,
     "congestion_rate": 0.2522,
     "drift": 0.0511,
-    "auc": 0.9719,
+    "auc": 0.8326,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -885,9 +885,9 @@
     "lon": -73.92614,
     "congestion_rate": 0.1798,
     "drift": -0.0204,
-    "auc": 0.984,
+    "auc": 0.9799,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Bronx"
   },
   {
@@ -896,9 +896,9 @@
     "lon": -73.91775,
     "congestion_rate": 0.2387,
     "drift": 0.0381,
-    "auc": 0.9787,
+    "auc": 0.9719,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Bronx"
   },
   {
@@ -907,7 +907,7 @@
     "lon": -73.92148,
     "congestion_rate": 0.218,
     "drift": 0.0172,
-    "auc": 0.9831,
+    "auc": 0.9711,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -918,7 +918,7 @@
     "lon": -73.98208,
     "congestion_rate": 0.2335,
     "drift": 0.0334,
-    "auc": 0.9912,
+    "auc": 0.9865,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -929,7 +929,7 @@
     "lon": -73.931,
     "congestion_rate": 0.207,
     "drift": 0.0066,
-    "auc": 0.9494,
+    "auc": 0.8679,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -940,7 +940,7 @@
     "lon": -73.98782,
     "congestion_rate": 0.2327,
     "drift": 0.0327,
-    "auc": 0.9864,
+    "auc": 0.9822,
     "num_lines": 8,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -951,7 +951,7 @@
     "lon": -74.00191,
     "congestion_rate": 0.216,
     "drift": 0.016,
-    "auc": 0.9847,
+    "auc": 0.9668,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -962,7 +962,7 @@
     "lon": -73.99106,
     "congestion_rate": 0.2409,
     "drift": 0.0408,
-    "auc": 0.9675,
+    "auc": 0.9673,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -973,7 +973,7 @@
     "lon": -73.99339,
     "congestion_rate": 0.2475,
     "drift": 0.0475,
-    "auc": 0.9757,
+    "auc": 0.9727,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -984,7 +984,7 @@
     "lon": -73.92957,
     "congestion_rate": 0.2253,
     "drift": 0.0248,
-    "auc": 0.9863,
+    "auc": 0.9693,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Queens"
@@ -995,9 +995,9 @@
     "lon": -74.00355,
     "congestion_rate": 0.2143,
     "drift": 0.0142,
-    "auc": 0.9789,
+    "auc": 0.9644,
     "num_lines": 3,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Brooklyn"
   },
   {
@@ -1006,7 +1006,7 @@
     "lon": -73.92878,
     "congestion_rate": 0.1994,
     "drift": -0.0023,
-    "auc": 0.9659,
+    "auc": 0.9534,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1017,7 +1017,7 @@
     "lon": -73.93275,
     "congestion_rate": 0.2338,
     "drift": 0.0334,
-    "auc": 0.956,
+    "auc": 0.9396,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1028,7 +1028,7 @@
     "lon": -73.98845,
     "congestion_rate": 0.2099,
     "drift": 0.0098,
-    "auc": 0.9904,
+    "auc": 0.9831,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1039,7 +1039,7 @@
     "lon": -73.92402,
     "congestion_rate": 0.2042,
     "drift": 0.0038,
-    "auc": 0.9765,
+    "auc": 0.9737,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -1050,7 +1050,7 @@
     "lon": -74.01001,
     "congestion_rate": 0.1602,
     "drift": -0.0401,
-    "auc": 0.9797,
+    "auc": 0.9782,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1061,9 +1061,9 @@
     "lon": -73.91333,
     "congestion_rate": 0.1829,
     "drift": -0.019,
-    "auc": 0.9799,
+    "auc": 0.9705,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Queens"
   },
   {
@@ -1072,7 +1072,7 @@
     "lon": -73.91843,
     "congestion_rate": 0.2087,
     "drift": 0.0087,
-    "auc": 0.9808,
+    "auc": 0.9753,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -1083,7 +1083,7 @@
     "lon": -73.98133,
     "congestion_rate": 0.2197,
     "drift": 0.0196,
-    "auc": 0.9939,
+    "auc": 0.9905,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1094,7 +1094,7 @@
     "lon": -73.98414,
     "congestion_rate": 0.2668,
     "drift": 0.0666,
-    "auc": 0.9676,
+    "auc": 0.9234,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1105,7 +1105,7 @@
     "lon": -73.97523,
     "congestion_rate": 0.1862,
     "drift": -0.0139,
-    "auc": 0.9951,
+    "auc": 0.9921,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1116,7 +1116,7 @@
     "lon": -73.97335,
     "congestion_rate": 0.2236,
     "drift": 0.0236,
-    "auc": 0.9931,
+    "auc": 0.9846,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1127,7 +1127,7 @@
     "lon": -73.98385,
     "congestion_rate": 0.1854,
     "drift": -0.0148,
-    "auc": 0.9737,
+    "auc": 0.9276,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1138,7 +1138,7 @@
     "lon": -73.98599,
     "congestion_rate": 0.2847,
     "drift": 0.0839,
-    "auc": 0.9584,
+    "auc": 0.914,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1149,7 +1149,7 @@
     "lon": -73.99479,
     "congestion_rate": 0.2039,
     "drift": 0.0023,
-    "auc": 0.9604,
+    "auc": 0.9439,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1160,7 +1160,7 @@
     "lon": -73.91255,
     "congestion_rate": 0.2405,
     "drift": 0.0382,
-    "auc": 0.9616,
+    "auc": 0.9603,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -1171,7 +1171,7 @@
     "lon": -74.01403,
     "congestion_rate": 0.1962,
     "drift": -0.0045,
-    "auc": 0.9895,
+    "auc": 0.988,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1182,7 +1182,7 @@
     "lon": -73.99548,
     "congestion_rate": 0.2087,
     "drift": 0.0077,
-    "auc": 0.961,
+    "auc": 0.9187,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1193,9 +1193,9 @@
     "lon": -73.97745,
     "congestion_rate": 0.2295,
     "drift": 0.0289,
-    "auc": 0.9788,
+    "auc": 0.9549,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -1204,7 +1204,7 @@
     "lon": -73.98066,
     "congestion_rate": 0.2282,
     "drift": 0.0281,
-    "auc": 0.9856,
+    "auc": 0.9792,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1215,7 +1215,7 @@
     "lon": -74.01788,
     "congestion_rate": 0.2066,
     "drift": 0.0065,
-    "auc": 0.9898,
+    "auc": 0.9835,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1226,7 +1226,7 @@
     "lon": -73.98174,
     "congestion_rate": 0.2356,
     "drift": 0.0355,
-    "auc": 0.9848,
+    "auc": 0.9695,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1237,7 +1237,7 @@
     "lon": -73.90299,
     "congestion_rate": 0.1481,
     "drift": -0.0528,
-    "auc": 0.9873,
+    "auc": 0.9748,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -1248,7 +1248,7 @@
     "lon": -73.8616,
     "congestion_rate": 0.1893,
     "drift": -0.0113,
-    "auc": 0.9845,
+    "auc": 0.9838,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -1259,7 +1259,7 @@
     "lon": -73.89845,
     "congestion_rate": 0.2317,
     "drift": 0.0308,
-    "auc": 0.9626,
+    "auc": 0.9361,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1270,7 +1270,7 @@
     "lon": -73.98221,
     "congestion_rate": 0.21,
     "drift": 0.0094,
-    "auc": 0.9742,
+    "auc": 0.948,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1281,9 +1281,9 @@
     "lon": -73.85272,
     "congestion_rate": 0.2004,
     "drift": 0.0001,
-    "auc": 0.9791,
+    "auc": 0.9763,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Queens"
   },
   {
@@ -1292,7 +1292,7 @@
     "lon": -73.96387,
     "congestion_rate": 0.2076,
     "drift": 0.0076,
-    "auc": 0.9817,
+    "auc": 0.9461,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1303,7 +1303,7 @@
     "lon": -73.8964,
     "congestion_rate": 0.235,
     "drift": 0.0319,
-    "auc": 0.9689,
+    "auc": 0.9407,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -1314,7 +1314,7 @@
     "lon": -73.97237,
     "congestion_rate": 0.1974,
     "drift": -0.0029,
-    "auc": 0.9834,
+    "auc": 0.9649,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1325,7 +1325,7 @@
     "lon": -73.98164,
     "congestion_rate": 0.2341,
     "drift": 0.034,
-    "auc": 0.9762,
+    "auc": 0.9646,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1336,7 +1336,7 @@
     "lon": -73.98031,
     "congestion_rate": 0.2128,
     "drift": 0.0127,
-    "auc": 0.9869,
+    "auc": 0.9826,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1347,7 +1347,7 @@
     "lon": -73.99886,
     "congestion_rate": 0.2108,
     "drift": 0.0104,
-    "auc": 0.9715,
+    "auc": 0.858,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1358,7 +1358,7 @@
     "lon": -73.98197,
     "congestion_rate": 0.2555,
     "drift": 0.0554,
-    "auc": 0.9777,
+    "auc": 0.9714,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1369,7 +1369,7 @@
     "lon": -73.97641,
     "congestion_rate": 0.258,
     "drift": 0.0575,
-    "auc": 0.9685,
+    "auc": 0.9582,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -1380,7 +1380,7 @@
     "lon": -73.95843,
     "congestion_rate": 0.2264,
     "drift": 0.0263,
-    "auc": 0.9931,
+    "auc": 0.9942,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1391,7 +1391,7 @@
     "lon": -73.89134,
     "congestion_rate": 0.2382,
     "drift": 0.0379,
-    "auc": 0.9842,
+    "auc": 0.9681,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Queens"
@@ -1402,7 +1402,7 @@
     "lon": -73.83733,
     "congestion_rate": 0.2468,
     "drift": 0.0464,
-    "auc": 0.9541,
+    "auc": 0.9418,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1413,7 +1413,7 @@
     "lon": -73.86714,
     "congestion_rate": 0.2558,
     "drift": 0.0556,
-    "auc": 0.9372,
+    "auc": 0.9115,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1424,7 +1424,7 @@
     "lon": -73.95988,
     "congestion_rate": 0.2149,
     "drift": 0.0145,
-    "auc": 0.9923,
+    "auc": 0.9831,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1435,7 +1435,7 @@
     "lon": -74.02551,
     "congestion_rate": 0.2236,
     "drift": 0.0229,
-    "auc": 0.9742,
+    "auc": 0.9522,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1446,9 +1446,9 @@
     "lon": -73.97992,
     "congestion_rate": 0.1833,
     "drift": -0.017,
-    "auc": 0.9842,
+    "auc": 0.9728,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -1457,7 +1457,7 @@
     "lon": -74.00061,
     "congestion_rate": 0.2606,
     "drift": 0.0605,
-    "auc": 0.9504,
+    "auc": 0.8934,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1468,7 +1468,7 @@
     "lon": -74.01172,
     "congestion_rate": 0.2288,
     "drift": 0.0286,
-    "auc": 0.955,
+    "auc": 0.9394,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1479,7 +1479,7 @@
     "lon": -73.99263,
     "congestion_rate": 0.2345,
     "drift": 0.0345,
-    "auc": 0.9768,
+    "auc": 0.9464,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1490,9 +1490,9 @@
     "lon": -73.85899,
     "congestion_rate": 0.1854,
     "drift": -0.015,
-    "auc": 0.9718,
+    "auc": 0.9142,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Queens"
   },
   {
@@ -1501,9 +1501,9 @@
     "lon": -73.97215,
     "congestion_rate": 0.2081,
     "drift": 0.008,
-    "auc": 0.9834,
+    "auc": 0.9424,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -1512,7 +1512,7 @@
     "lon": -73.8837,
     "congestion_rate": 0.1788,
     "drift": -0.022,
-    "auc": 0.9664,
+    "auc": 0.9421,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -1523,7 +1523,7 @@
     "lon": -73.86001,
     "congestion_rate": 0.1658,
     "drift": -0.0355,
-    "auc": 0.9761,
+    "auc": 0.9305,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1534,7 +1534,7 @@
     "lon": -73.97622,
     "congestion_rate": 0.1956,
     "drift": -0.0047,
-    "auc": 0.988,
+    "auc": 0.9815,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1545,7 +1545,7 @@
     "lon": -73.95559,
     "congestion_rate": 0.2304,
     "drift": 0.0302,
-    "auc": 0.9908,
+    "auc": 0.9842,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1556,7 +1556,7 @@
     "lon": -73.96892,
     "congestion_rate": 0.2384,
     "drift": 0.0371,
-    "auc": 0.9844,
+    "auc": 0.9724,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -1567,7 +1567,7 @@
     "lon": -73.97823,
     "congestion_rate": 0.1919,
     "drift": -0.0097,
-    "auc": 0.9644,
+    "auc": 0.9046,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1578,7 +1578,7 @@
     "lon": -73.95179,
     "congestion_rate": 0.2091,
     "drift": 0.0089,
-    "auc": 0.9664,
+    "auc": 0.9586,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1589,7 +1589,7 @@
     "lon": -74.0284,
     "congestion_rate": 0.187,
     "drift": -0.0136,
-    "auc": 0.9721,
+    "auc": 0.9522,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1600,7 +1600,7 @@
     "lon": -73.85147,
     "congestion_rate": 0.1963,
     "drift": -0.0065,
-    "auc": 0.9773,
+    "auc": 0.8953,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1611,7 +1611,7 @@
     "lon": -73.99432,
     "congestion_rate": 0.1998,
     "drift": -0.002,
-    "auc": 0.9721,
+    "auc": 0.9286,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1622,7 +1622,7 @@
     "lon": -73.87661,
     "congestion_rate": 0.2445,
     "drift": 0.0444,
-    "auc": 0.9629,
+    "auc": 0.9513,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -1633,7 +1633,7 @@
     "lon": -73.97232,
     "congestion_rate": 0.2333,
     "drift": 0.0332,
-    "auc": 0.9768,
+    "auc": 0.9659,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1644,7 +1644,7 @@
     "lon": -73.95107,
     "congestion_rate": 0.2161,
     "drift": 0.0158,
-    "auc": 0.9904,
+    "auc": 0.9897,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1655,7 +1655,7 @@
     "lon": -73.9647,
     "congestion_rate": 0.2198,
     "drift": 0.0195,
-    "auc": 0.9865,
+    "auc": 0.9777,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -1666,7 +1666,7 @@
     "lon": -73.94715,
     "congestion_rate": 0.2226,
     "drift": 0.0225,
-    "auc": 0.9813,
+    "auc": 0.9756,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1677,7 +1677,7 @@
     "lon": -73.89865,
     "congestion_rate": 0.2073,
     "drift": 0.0027,
-    "auc": 0.9767,
+    "auc": 0.9309,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1688,7 +1688,7 @@
     "lon": -73.86735,
     "congestion_rate": 0.1574,
     "drift": -0.0463,
-    "auc": 0.9846,
+    "auc": 0.9604,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -1699,7 +1699,7 @@
     "lon": -73.83592,
     "congestion_rate": 0.1414,
     "drift": -0.0653,
-    "auc": 0.9064,
+    "auc": 0.6648,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1710,7 +1710,7 @@
     "lon": -73.83406,
     "congestion_rate": 0.2293,
     "drift": 0.0225,
-    "auc": 0.9596,
+    "auc": 0.9454,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1721,7 +1721,7 @@
     "lon": -73.99107,
     "congestion_rate": 0.2593,
     "drift": 0.059,
-    "auc": 0.9826,
+    "auc": 0.9486,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -1732,7 +1732,7 @@
     "lon": -73.91785,
     "congestion_rate": 0.2322,
     "drift": 0.031,
-    "auc": 0.9771,
+    "auc": 0.9632,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -1743,9 +1743,9 @@
     "lon": -73.91203,
     "congestion_rate": 0.2124,
     "drift": 0.0113,
-    "auc": 0.9832,
+    "auc": 0.9748,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Queens"
   },
   {
@@ -1754,7 +1754,7 @@
     "lon": -73.9031,
     "congestion_rate": 0.2488,
     "drift": 0.047,
-    "auc": 0.963,
+    "auc": 0.95,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1765,7 +1765,7 @@
     "lon": -73.97706,
     "congestion_rate": 0.2128,
     "drift": 0.0127,
-    "auc": 0.9661,
+    "auc": 0.96,
     "num_lines": 9,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -1776,7 +1776,7 @@
     "lon": -73.96164,
     "congestion_rate": 0.2178,
     "drift": 0.0144,
-    "auc": 0.964,
+    "auc": 0.9645,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1787,7 +1787,7 @@
     "lon": -73.97613,
     "congestion_rate": 0.1539,
     "drift": -0.0484,
-    "auc": 0.9685,
+    "auc": 0.945,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1798,7 +1798,7 @@
     "lon": -73.9608,
     "congestion_rate": 0.1939,
     "drift": -0.0079,
-    "auc": 0.9802,
+    "auc": 0.9685,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1809,7 +1809,7 @@
     "lon": -73.9594,
     "congestion_rate": 0.1776,
     "drift": -0.0247,
-    "auc": 0.9718,
+    "auc": 0.9697,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1820,7 +1820,7 @@
     "lon": -73.9742,
     "congestion_rate": 0.1566,
     "drift": -0.0441,
-    "auc": 0.9778,
+    "auc": 0.936,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1831,7 +1831,7 @@
     "lon": -73.97302,
     "congestion_rate": 0.1492,
     "drift": -0.0525,
-    "auc": 0.9818,
+    "auc": 0.9254,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1842,7 +1842,7 @@
     "lon": -73.97336,
     "congestion_rate": 0.1681,
     "drift": -0.0322,
-    "auc": 0.9691,
+    "auc": 0.9477,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1853,9 +1853,9 @@
     "lon": -73.97913,
     "congestion_rate": 0.1906,
     "drift": -0.0117,
-    "auc": 0.9555,
+    "auc": 0.8799,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -1864,9 +1864,9 @@
     "lon": -73.95593,
     "congestion_rate": 0.1819,
     "drift": -0.0185,
-    "auc": 0.9798,
+    "auc": 0.9605,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Brooklyn"
   },
   {
@@ -1875,7 +1875,7 @@
     "lon": -73.97425,
     "congestion_rate": 0.1597,
     "drift": -0.0404,
-    "auc": 0.9785,
+    "auc": 0.9346,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1886,7 +1886,7 @@
     "lon": -73.98377,
     "congestion_rate": 0.2043,
     "drift": 0.0023,
-    "auc": 0.9589,
+    "auc": 0.9146,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1897,9 +1897,9 @@
     "lon": -73.99373,
     "congestion_rate": 0.159,
     "drift": -0.0428,
-    "auc": 0.9715,
+    "auc": 0.948,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Brooklyn"
   },
   {
@@ -1908,7 +1908,7 @@
     "lon": -73.97527,
     "congestion_rate": 0.1319,
     "drift": -0.0692,
-    "auc": 0.9633,
+    "auc": 0.9617,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -1919,9 +1919,9 @@
     "lon": -73.98185,
     "congestion_rate": 0.188,
     "drift": -0.0135,
-    "auc": 0.9742,
+    "auc": 0.9245,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Brooklyn"
   },
   {
@@ -1930,7 +1930,7 @@
     "lon": -74.02338,
     "congestion_rate": 0.2147,
     "drift": 0.0144,
-    "auc": 0.9663,
+    "auc": 0.9612,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -1941,7 +1941,7 @@
     "lon": -74.03088,
     "congestion_rate": 0.2332,
     "drift": 0.0314,
-    "auc": 0.9818,
+    "auc": 0.9786,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -1952,7 +1952,7 @@
     "lon": -73.83859,
     "congestion_rate": 0.1997,
     "drift": -0.0021,
-    "auc": 0.9728,
+    "auc": 0.9031,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -1963,7 +1963,7 @@
     "lon": -73.82756,
     "congestion_rate": 0.233,
     "drift": 0.0247,
-    "auc": 0.9226,
+    "auc": 0.8262,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -1974,7 +1974,7 @@
     "lon": -73.76135,
     "congestion_rate": 0.1867,
     "drift": -0.0148,
-    "auc": 0.9746,
+    "auc": 0.9318,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1985,7 +1985,7 @@
     "lon": -73.76817,
     "congestion_rate": 0.2048,
     "drift": -0.0025,
-    "auc": 0.9536,
+    "auc": 0.9483,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -1996,7 +1996,7 @@
     "lon": -73.77602,
     "congestion_rate": 0.2253,
     "drift": 0.0241,
-    "auc": 0.9527,
+    "auc": 0.9502,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -2007,7 +2007,7 @@
     "lon": -73.78852,
     "congestion_rate": 0.1648,
     "drift": -0.0364,
-    "auc": 0.972,
+    "auc": 0.9404,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -2018,7 +2018,7 @@
     "lon": -73.79692,
     "congestion_rate": 0.2153,
     "drift": 0.011,
-    "auc": 0.9548,
+    "auc": 0.8989,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -2029,7 +2029,7 @@
     "lon": -73.81364,
     "congestion_rate": 0.2331,
     "drift": 0.0208,
-    "auc": 0.9284,
+    "auc": 0.8409,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -2040,7 +2040,7 @@
     "lon": -73.82056,
     "congestion_rate": 0.2116,
     "drift": -0.0072,
-    "auc": 0.9153,
+    "auc": 0.8529,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -2051,7 +2051,7 @@
     "lon": -73.95687,
     "congestion_rate": 0.2173,
     "drift": 0.017,
-    "auc": 0.9634,
+    "auc": 0.9334,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -2062,7 +2062,7 @@
     "lon": -73.88714,
     "congestion_rate": 0.1633,
     "drift": -0.0383,
-    "auc": 0.9822,
+    "auc": 0.967,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -2073,7 +2073,7 @@
     "lon": -73.89006,
     "congestion_rate": 0.171,
     "drift": -0.0294,
-    "auc": 0.969,
+    "auc": 0.9534,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -2084,7 +2084,7 @@
     "lon": -73.95352,
     "congestion_rate": 0.2188,
     "drift": 0.018,
-    "auc": 0.9564,
+    "auc": 0.9191,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2095,7 +2095,7 @@
     "lon": -73.9751,
     "congestion_rate": 0.2647,
     "drift": 0.0634,
-    "auc": 0.9517,
+    "auc": 0.8923,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2106,7 +2106,7 @@
     "lon": -73.99086,
     "congestion_rate": 0.2073,
     "drift": 0.0067,
-    "auc": 0.9851,
+    "auc": 0.9735,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2117,7 +2117,7 @@
     "lon": -73.96449,
     "congestion_rate": 0.2826,
     "drift": 0.0773,
-    "auc": 0.9356,
+    "auc": 0.9208,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2128,7 +2128,7 @@
     "lon": -73.94896,
     "congestion_rate": 0.2454,
     "drift": 0.0416,
-    "auc": 0.9532,
+    "auc": 0.9335,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2139,7 +2139,7 @@
     "lon": -73.99391,
     "congestion_rate": 0.1948,
     "drift": -0.0063,
-    "auc": 0.931,
+    "auc": 0.8254,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2150,7 +2150,7 @@
     "lon": -74.01407,
     "congestion_rate": 0.2067,
     "drift": 0.0067,
-    "auc": 0.9861,
+    "auc": 0.9696,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2161,7 +2161,7 @@
     "lon": -73.82057,
     "congestion_rate": 0.2178,
     "drift": 0.0159,
-    "auc": 0.9756,
+    "auc": 0.9547,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Queens"
@@ -2172,7 +2172,7 @@
     "lon": -73.96137,
     "congestion_rate": 0.1643,
     "drift": -0.036,
-    "auc": 0.9524,
+    "auc": 0.944,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2183,7 +2183,7 @@
     "lon": -73.81593,
     "congestion_rate": 0.2458,
     "drift": 0.0255,
-    "auc": 0.9128,
+    "auc": 0.8887,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -2194,7 +2194,7 @@
     "lon": -74.01106,
     "congestion_rate": 0.2257,
     "drift": 0.0247,
-    "auc": 0.9842,
+    "auc": 0.9482,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2205,7 +2205,7 @@
     "lon": -73.95031,
     "congestion_rate": 0.2068,
     "drift": 0.0049,
-    "auc": 0.9438,
+    "auc": 0.9496,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2216,7 +2216,7 @@
     "lon": -73.92551,
     "congestion_rate": 0.223,
     "drift": 0.0224,
-    "auc": 0.9693,
+    "auc": 0.9468,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -2227,7 +2227,7 @@
     "lon": -73.90532,
     "congestion_rate": 0.2627,
     "drift": 0.0608,
-    "auc": 0.9784,
+    "auc": 0.9492,
     "num_lines": 5,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2238,7 +2238,7 @@
     "lon": -73.99472,
     "congestion_rate": 0.2211,
     "drift": 0.021,
-    "auc": 0.992,
+    "auc": 0.9879,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2249,7 +2249,7 @@
     "lon": -73.86845,
     "congestion_rate": 0.1818,
     "drift": -0.0184,
-    "auc": 0.983,
+    "auc": 0.9652,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2260,7 +2260,7 @@
     "lon": -73.91924,
     "congestion_rate": 0.1823,
     "drift": -0.019,
-    "auc": 0.9772,
+    "auc": 0.9742,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -2271,7 +2271,7 @@
     "lon": -74.00348,
     "congestion_rate": 0.2084,
     "drift": 0.0082,
-    "auc": 0.9857,
+    "auc": 0.9588,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2282,7 +2282,7 @@
     "lon": -73.98231,
     "congestion_rate": 0.2305,
     "drift": 0.0305,
-    "auc": 0.9917,
+    "auc": 0.983,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2293,7 +2293,7 @@
     "lon": -73.83257,
     "congestion_rate": 0.1897,
     "drift": -0.0132,
-    "auc": 0.98,
+    "auc": 0.9259,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2304,7 +2304,7 @@
     "lon": -73.86716,
     "congestion_rate": 0.1927,
     "drift": -0.0122,
-    "auc": 0.9729,
+    "auc": 0.919,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2315,7 +2315,7 @@
     "lon": -73.90768,
     "congestion_rate": 0.2371,
     "drift": 0.0371,
-    "auc": 0.9798,
+    "auc": 0.979,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -2326,7 +2326,7 @@
     "lon": -73.90525,
     "congestion_rate": 0.2377,
     "drift": 0.0302,
-    "auc": 0.9393,
+    "auc": 0.9147,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2337,7 +2337,7 @@
     "lon": -74.00628,
     "congestion_rate": 0.2111,
     "drift": 0.0107,
-    "auc": 0.9856,
+    "auc": 0.942,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2348,7 +2348,7 @@
     "lon": -74.00523,
     "congestion_rate": 0.2234,
     "drift": 0.0233,
-    "auc": 0.9942,
+    "auc": 0.9789,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2359,7 +2359,7 @@
     "lon": -74.00009,
     "congestion_rate": 0.2199,
     "drift": 0.0197,
-    "auc": 0.9923,
+    "auc": 0.9885,
     "num_lines": 7,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2370,9 +2370,9 @@
     "lon": -73.90185,
     "congestion_rate": 0.1083,
     "drift": -0.094,
-    "auc": 0.9898,
+    "auc": 0.9841,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 1,
     "borough": "Brooklyn"
   },
   {
@@ -2381,7 +2381,7 @@
     "lon": -73.99505,
     "congestion_rate": 0.2203,
     "drift": 0.02,
-    "auc": 0.99,
+    "auc": 0.9829,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2392,7 +2392,7 @@
     "lon": -73.85122,
     "congestion_rate": 0.2076,
     "drift": 0.0061,
-    "auc": 0.9784,
+    "auc": 0.9366,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -2403,7 +2403,7 @@
     "lon": -73.96685,
     "congestion_rate": 0.218,
     "drift": 0.018,
-    "auc": 0.9823,
+    "auc": 0.9722,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -2414,7 +2414,7 @@
     "lon": -73.95816,
     "congestion_rate": 0.2365,
     "drift": 0.0362,
-    "auc": 0.9754,
+    "auc": 0.9352,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -2425,9 +2425,9 @@
     "lon": -73.9274,
     "congestion_rate": 0.2284,
     "drift": 0.0278,
-    "auc": 0.9588,
+    "auc": 0.9412,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 1,
     "borough": "Brooklyn"
   },
   {
@@ -2436,9 +2436,9 @@
     "lon": -73.95182,
     "congestion_rate": 0.1993,
     "drift": -0.0012,
-    "auc": 0.984,
+    "auc": 0.9551,
     "num_lines": 3,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Manhattan"
   },
   {
@@ -2447,7 +2447,7 @@
     "lon": -74.00927,
     "congestion_rate": 0.2126,
     "drift": 0.0122,
-    "auc": 0.9862,
+    "auc": 0.9869,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2458,7 +2458,7 @@
     "lon": -74.00868,
     "congestion_rate": 0.2329,
     "drift": 0.0328,
-    "auc": 0.9877,
+    "auc": 0.975,
     "num_lines": 7,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2469,7 +2469,7 @@
     "lon": -73.91045,
     "congestion_rate": 0.2136,
     "drift": 0.0087,
-    "auc": 0.939,
+    "auc": 0.9319,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2480,7 +2480,7 @@
     "lon": -74.00291,
     "congestion_rate": 0.2555,
     "drift": 0.0537,
-    "auc": 0.9641,
+    "auc": 0.8735,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -2491,7 +2491,7 @@
     "lon": -73.94958,
     "congestion_rate": 0.1875,
     "drift": -0.0148,
-    "auc": 0.9575,
+    "auc": 0.9507,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2502,7 +2502,7 @@
     "lon": -73.96298,
     "congestion_rate": 0.1414,
     "drift": -0.0593,
-    "auc": 0.9735,
+    "auc": 0.9602,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2513,7 +2513,7 @@
     "lon": -73.97967,
     "congestion_rate": 0.1877,
     "drift": -0.0127,
-    "auc": 0.9705,
+    "auc": 0.9478,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2524,7 +2524,7 @@
     "lon": -74.00698,
     "congestion_rate": 0.2096,
     "drift": 0.0096,
-    "auc": 0.9806,
+    "auc": 0.9694,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2535,7 +2535,7 @@
     "lon": -73.99309,
     "congestion_rate": 0.2689,
     "drift": 0.0673,
-    "auc": 0.9518,
+    "auc": 0.8868,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2546,7 +2546,7 @@
     "lon": -73.96007,
     "congestion_rate": 0.1903,
     "drift": -0.0115,
-    "auc": 0.9696,
+    "auc": 0.9411,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2557,7 +2557,7 @@
     "lon": -73.88464,
     "congestion_rate": 0.1595,
     "drift": -0.0416,
-    "auc": 0.9711,
+    "auc": 0.9553,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2568,7 +2568,7 @@
     "lon": -73.96584,
     "congestion_rate": 0.234,
     "drift": 0.0335,
-    "auc": 0.975,
+    "auc": 0.9468,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2579,7 +2579,7 @@
     "lon": -73.96684,
     "congestion_rate": 0.1953,
     "drift": -0.0063,
-    "auc": 0.9831,
+    "auc": 0.9613,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2590,9 +2590,9 @@
     "lon": -73.98123,
     "congestion_rate": 0.2159,
     "drift": 0.0151,
-    "auc": 0.9599,
+    "auc": 0.9174,
     "num_lines": 4,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Brooklyn"
   },
   {
@@ -2601,7 +2601,7 @@
     "lon": -73.96389,
     "congestion_rate": 0.2323,
     "drift": 0.029,
-    "auc": 0.9569,
+    "auc": 0.9311,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2612,7 +2612,7 @@
     "lon": -73.94401,
     "congestion_rate": 0.2394,
     "drift": 0.0393,
-    "auc": 0.9853,
+    "auc": 0.9816,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Queens"
@@ -2623,7 +2623,7 @@
     "lon": -73.99003,
     "congestion_rate": 0.2268,
     "drift": 0.0265,
-    "auc": 0.9913,
+    "auc": 0.984,
     "num_lines": 5,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -2634,7 +2634,7 @@
     "lon": -73.87379,
     "congestion_rate": 0.1715,
     "drift": -0.0293,
-    "auc": 0.9638,
+    "auc": 0.9404,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2645,7 +2645,7 @@
     "lon": -73.93295,
     "congestion_rate": 0.2245,
     "drift": 0.024,
-    "auc": 0.9695,
+    "auc": 0.947,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -2656,7 +2656,7 @@
     "lon": -73.91404,
     "congestion_rate": 0.2574,
     "drift": 0.0551,
-    "auc": 0.9736,
+    "auc": 0.9715,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2667,7 +2667,7 @@
     "lon": -73.87255,
     "congestion_rate": 0.2038,
     "drift": -0.002,
-    "auc": 0.9487,
+    "auc": 0.9208,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2678,7 +2678,7 @@
     "lon": -73.98183,
     "congestion_rate": 0.258,
     "drift": 0.0578,
-    "auc": 0.9854,
+    "auc": 0.9811,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -2689,7 +2689,7 @@
     "lon": -73.91843,
     "congestion_rate": 0.2435,
     "drift": 0.0433,
-    "auc": 0.9531,
+    "auc": 0.935,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2700,7 +2700,7 @@
     "lon": -73.9875,
     "congestion_rate": 0.2088,
     "drift": 0.0082,
-    "auc": 0.9773,
+    "auc": 0.9702,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -2711,9 +2711,9 @@
     "lon": -73.97817,
     "congestion_rate": 0.1751,
     "drift": -0.025,
-    "auc": 0.984,
+    "auc": 0.9675,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -2722,7 +2722,7 @@
     "lon": -73.92554,
     "congestion_rate": 0.1781,
     "drift": -0.0221,
-    "auc": 0.977,
+    "auc": 0.9479,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2733,7 +2733,7 @@
     "lon": -73.92727,
     "congestion_rate": 0.2275,
     "drift": 0.0268,
-    "auc": 0.9685,
+    "auc": 0.9337,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -2744,7 +2744,7 @@
     "lon": -73.90765,
     "congestion_rate": 0.2098,
     "drift": 0.0083,
-    "auc": 0.9719,
+    "auc": 0.9007,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2755,9 +2755,9 @@
     "lon": -73.9041,
     "congestion_rate": 0.182,
     "drift": -0.0189,
-    "auc": 0.986,
+    "auc": 0.9672,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Bronx"
   },
   {
@@ -2766,9 +2766,9 @@
     "lon": -73.87349,
     "congestion_rate": 0.1979,
     "drift": -0.0025,
-    "auc": 0.9683,
+    "auc": 0.9274,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Bronx"
   },
   {
@@ -2777,7 +2777,7 @@
     "lon": -73.89948,
     "congestion_rate": 0.1973,
     "drift": -0.004,
-    "auc": 0.9865,
+    "auc": 0.9552,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2788,9 +2788,9 @@
     "lon": -73.99017,
     "congestion_rate": 0.186,
     "drift": -0.0142,
-    "auc": 0.9838,
+    "auc": 0.973,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -2799,7 +2799,7 @@
     "lon": -73.83083,
     "congestion_rate": 0.207,
     "drift": 0.0045,
-    "auc": 0.9868,
+    "auc": 0.9546,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -2810,7 +2810,7 @@
     "lon": -73.96438,
     "congestion_rate": 0.2137,
     "drift": 0.0121,
-    "auc": 0.9555,
+    "auc": 0.8993,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2821,7 +2821,7 @@
     "lon": -73.87916,
     "congestion_rate": 0.1699,
     "drift": -0.0311,
-    "auc": 0.984,
+    "auc": 0.9325,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -2832,7 +2832,7 @@
     "lon": -73.88202,
     "congestion_rate": 0.2539,
     "drift": 0.0535,
-    "auc": 0.9594,
+    "auc": 0.9381,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -2843,7 +2843,7 @@
     "lon": -73.87211,
     "congestion_rate": 0.1996,
     "drift": -0.0009,
-    "auc": 0.9676,
+    "auc": 0.9492,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -2854,9 +2854,9 @@
     "lon": -73.7554,
     "congestion_rate": 0.2424,
     "drift": 0.0412,
-    "auc": 0.9875,
+    "auc": 0.9466,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Queens"
   },
   {
@@ -2865,9 +2865,9 @@
     "lon": -73.94764,
     "congestion_rate": 0.2017,
     "drift": 0.0013,
-    "auc": 0.9795,
+    "auc": 0.9697,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Brooklyn"
   },
   {
@@ -2876,7 +2876,7 @@
     "lon": -73.95023,
     "congestion_rate": 0.1918,
     "drift": -0.0092,
-    "auc": 0.9429,
+    "auc": 0.9419,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2887,9 +2887,9 @@
     "lon": -73.94112,
     "congestion_rate": 0.2185,
     "drift": 0.0168,
-    "auc": 0.9741,
+    "auc": 0.9709,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Brooklyn"
   },
   {
@@ -2898,7 +2898,7 @@
     "lon": -73.83003,
     "congestion_rate": 0.2342,
     "drift": 0.0342,
-    "auc": 0.9913,
+    "auc": 0.9904,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -2909,7 +2909,7 @@
     "lon": -73.90103,
     "congestion_rate": 0.1012,
     "drift": -0.0993,
-    "auc": 0.9801,
+    "auc": 0.9708,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -2920,7 +2920,7 @@
     "lon": -73.89775,
     "congestion_rate": 0.1195,
     "drift": -0.0812,
-    "auc": 0.9872,
+    "auc": 0.9855,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Bronx"
@@ -2931,7 +2931,7 @@
     "lon": -73.90308,
     "congestion_rate": 0.2341,
     "drift": 0.0337,
-    "auc": 0.9724,
+    "auc": 0.8987,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -2942,7 +2942,7 @@
     "lon": -73.84452,
     "congestion_rate": 0.2131,
     "drift": 0.0127,
-    "auc": 0.9808,
+    "auc": 0.9765,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Queens"
@@ -2953,7 +2953,7 @@
     "lon": -73.9943,
     "congestion_rate": 0.2199,
     "drift": 0.0193,
-    "auc": 0.9824,
+    "auc": 0.9781,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -2964,7 +2964,7 @@
     "lon": -73.97578,
     "congestion_rate": 0.1912,
     "drift": -0.0108,
-    "auc": 0.9564,
+    "auc": 0.936,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2975,7 +2975,7 @@
     "lon": -74.00535,
     "congestion_rate": 0.2096,
     "drift": 0.0091,
-    "auc": 0.9767,
+    "auc": 0.9263,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -2986,9 +2986,9 @@
     "lon": -73.95814,
     "congestion_rate": 0.2245,
     "drift": 0.0244,
-    "auc": 0.9812,
+    "auc": 0.9648,
     "num_lines": 5,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Brooklyn"
   },
   {
@@ -2997,7 +2997,7 @@
     "lon": -73.95685,
     "congestion_rate": 0.2407,
     "drift": 0.04,
-    "auc": 0.9624,
+    "auc": 0.9493,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3008,7 +3008,7 @@
     "lon": -74.00689,
     "congestion_rate": 0.2402,
     "drift": 0.0398,
-    "auc": 0.9788,
+    "auc": 0.967,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -3019,7 +3019,7 @@
     "lon": -73.89187,
     "congestion_rate": 0.1945,
     "drift": -0.0085,
-    "auc": 0.9832,
+    "auc": 0.9614,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3030,7 +3030,7 @@
     "lon": -73.89587,
     "congestion_rate": 0.1906,
     "drift": -0.0097,
-    "auc": 0.9803,
+    "auc": 0.9323,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -3041,7 +3041,7 @@
     "lon": -74.00673,
     "congestion_rate": 0.2438,
     "drift": 0.0438,
-    "auc": 0.9881,
+    "auc": 0.9852,
     "num_lines": 8,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -3052,7 +3052,7 @@
     "lon": -73.97537,
     "congestion_rate": 0.209,
     "drift": 0.0089,
-    "auc": 0.9504,
+    "auc": 0.906,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3063,7 +3063,7 @@
     "lon": -73.92227,
     "congestion_rate": 0.2173,
     "drift": 0.015,
-    "auc": 0.9641,
+    "auc": 0.9518,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3074,7 +3074,7 @@
     "lon": -73.94405,
     "congestion_rate": 0.221,
     "drift": 0.0201,
-    "auc": 0.9723,
+    "auc": 0.9503,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3085,7 +3085,7 @@
     "lon": -73.97105,
     "congestion_rate": 0.2145,
     "drift": 0.0144,
-    "auc": 0.9832,
+    "auc": 0.9537,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3096,7 +3096,7 @@
     "lon": -73.87722,
     "congestion_rate": 0.2326,
     "drift": 0.0325,
-    "auc": 0.9781,
+    "auc": 0.9691,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Queens"
@@ -3118,7 +3118,7 @@
     "lon": -73.99375,
     "congestion_rate": 0.1969,
     "drift": -0.0035,
-    "auc": 0.9876,
+    "auc": 0.9619,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -3129,7 +3129,7 @@
     "lon": -73.94067,
     "congestion_rate": 0.2042,
     "drift": 0.0033,
-    "auc": 0.9844,
+    "auc": 0.9818,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3140,7 +3140,7 @@
     "lon": -73.86505,
     "congestion_rate": 0.1675,
     "drift": -0.0339,
-    "auc": 0.9779,
+    "auc": 0.9531,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3151,7 +3151,7 @@
     "lon": -73.95445,
     "congestion_rate": 0.2192,
     "drift": 0.0189,
-    "auc": 0.9855,
+    "auc": 0.9742,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3162,7 +3162,7 @@
     "lon": -73.86626,
     "congestion_rate": 0.2354,
     "drift": 0.0339,
-    "auc": 0.9804,
+    "auc": 0.9775,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -3173,9 +3173,9 @@
     "lon": -73.84638,
     "congestion_rate": 0.1747,
     "drift": -0.028,
-    "auc": 0.9648,
+    "auc": 0.9026,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Bronx"
   },
   {
@@ -3184,7 +3184,7 @@
     "lon": -73.91656,
     "congestion_rate": 0.1817,
     "drift": -0.0189,
-    "auc": 0.9581,
+    "auc": 0.9347,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3195,7 +3195,7 @@
     "lon": -73.90408,
     "congestion_rate": 0.202,
     "drift": 0.0012,
-    "auc": 0.9646,
+    "auc": 0.9541,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -3206,7 +3206,7 @@
     "lon": -73.93647,
     "congestion_rate": 0.1901,
     "drift": -0.0131,
-    "auc": 0.9663,
+    "auc": 0.9137,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Manhattan"
@@ -3217,7 +3217,7 @@
     "lon": -73.95343,
     "congestion_rate": 0.2495,
     "drift": 0.0464,
-    "auc": 0.945,
+    "auc": 0.9137,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3228,7 +3228,7 @@
     "lon": -73.99053,
     "congestion_rate": 0.1889,
     "drift": -0.012,
-    "auc": 0.9623,
+    "auc": 0.921,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3239,7 +3239,7 @@
     "lon": -74.00536,
     "congestion_rate": 0.2239,
     "drift": 0.0239,
-    "auc": 0.9866,
+    "auc": 0.9811,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -3250,9 +3250,9 @@
     "lon": -73.8303,
     "congestion_rate": 0.4166,
     "drift": 0.2151,
-    "auc": 0.8908,
+    "auc": 0.8439,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 1,
     "borough": "Queens"
   },
   {
@@ -3261,7 +3261,7 @@
     "lon": -73.98506,
     "congestion_rate": 0.2554,
     "drift": 0.0553,
-    "auc": 0.9719,
+    "auc": 0.9276,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3272,7 +3272,7 @@
     "lon": -73.985,
     "congestion_rate": 0.2186,
     "drift": 0.0182,
-    "auc": 0.9865,
+    "auc": 0.9596,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3283,7 +3283,7 @@
     "lon": -73.94891,
     "congestion_rate": 0.206,
     "drift": 0.0052,
-    "auc": 0.9817,
+    "auc": 0.9762,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -3294,7 +3294,7 @@
     "lon": -73.89055,
     "congestion_rate": 0.1676,
     "drift": -0.0328,
-    "auc": 0.9867,
+    "auc": 0.981,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -3305,7 +3305,7 @@
     "lon": -73.89674,
     "congestion_rate": 0.1715,
     "drift": -0.0313,
-    "auc": 0.9767,
+    "auc": 0.9707,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3316,7 +3316,7 @@
     "lon": -73.9199,
     "congestion_rate": 0.2564,
     "drift": 0.0562,
-    "auc": 0.98,
+    "auc": 0.9629,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -3327,7 +3327,7 @@
     "lon": -73.90781,
     "congestion_rate": 0.214,
     "drift": 0.012,
-    "auc": 0.9876,
+    "auc": 0.9779,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -3338,7 +3338,7 @@
     "lon": -73.80111,
     "congestion_rate": 0.2354,
     "drift": 0.0349,
-    "auc": 0.9883,
+    "auc": 0.979,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Queens"
@@ -3349,7 +3349,7 @@
     "lon": -73.78381,
     "congestion_rate": 0.2302,
     "drift": 0.0302,
-    "auc": 0.9812,
+    "auc": 0.9671,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -3360,7 +3360,7 @@
     "lon": -73.81686,
     "congestion_rate": 0.2177,
     "drift": 0.017,
-    "auc": 0.9874,
+    "auc": 0.964,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -3371,7 +3371,7 @@
     "lon": -73.98632,
     "congestion_rate": 0.2534,
     "drift": 0.0534,
-    "auc": 0.9741,
+    "auc": 0.9389,
     "num_lines": 4,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -3382,7 +3382,7 @@
     "lon": -73.92291,
     "congestion_rate": 0.2699,
     "drift": 0.0692,
-    "auc": 0.935,
+    "auc": 0.9031,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3393,7 +3393,7 @@
     "lon": -73.86953,
     "congestion_rate": 0.2011,
     "drift": 0.0009,
-    "auc": 0.9858,
+    "auc": 0.9648,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -3404,7 +3404,7 @@
     "lon": -73.90245,
     "congestion_rate": 0.2244,
     "drift": 0.0212,
-    "auc": 0.9781,
+    "auc": 0.9661,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3415,7 +3415,7 @@
     "lon": -73.83101,
     "congestion_rate": 0.1912,
     "drift": -0.009,
-    "auc": 0.9931,
+    "auc": 0.9916,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Queens"
@@ -3426,7 +3426,7 @@
     "lon": -73.95773,
     "congestion_rate": 0.1793,
     "drift": -0.021,
-    "auc": 0.9862,
+    "auc": 0.9781,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -3437,7 +3437,7 @@
     "lon": -73.97236,
     "congestion_rate": 0.2037,
     "drift": 0.0023,
-    "auc": 0.9753,
+    "auc": 0.9444,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3448,7 +3448,7 @@
     "lon": -73.98035,
     "congestion_rate": 0.1968,
     "drift": -0.0042,
-    "auc": 0.9727,
+    "auc": 0.9028,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3459,7 +3459,7 @@
     "lon": -73.89717,
     "congestion_rate": 0.1448,
     "drift": -0.0556,
-    "auc": 0.9785,
+    "auc": 0.9672,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Bronx"
@@ -3470,7 +3470,7 @@
     "lon": -73.89351,
     "congestion_rate": 0.1699,
     "drift": -0.0334,
-    "auc": 0.984,
+    "auc": 0.9591,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -3492,7 +3492,7 @@
     "lon": -73.94086,
     "congestion_rate": 0.2443,
     "drift": 0.0425,
-    "auc": 0.9639,
+    "auc": 0.9517,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3503,7 +3503,7 @@
     "lon": -73.91971,
     "congestion_rate": 0.2119,
     "drift": 0.0107,
-    "auc": 0.9704,
+    "auc": 0.9496,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3514,7 +3514,7 @@
     "lon": -73.92882,
     "congestion_rate": 0.2767,
     "drift": 0.0745,
-    "auc": 0.9572,
+    "auc": 0.9413,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3525,7 +3525,7 @@
     "lon": -73.97395,
     "congestion_rate": 0.2375,
     "drift": 0.0375,
-    "auc": 0.929,
+    "auc": 0.8931,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3536,7 +3536,7 @@
     "lon": -73.9673,
     "congestion_rate": 0.2025,
     "drift": 0.0024,
-    "auc": 0.9957,
+    "auc": 0.9941,
     "num_lines": 6,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -3547,7 +3547,7 @@
     "lon": -73.96912,
     "congestion_rate": 0.2344,
     "drift": 0.0342,
-    "auc": 0.9889,
+    "auc": 0.9619,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -3558,7 +3558,7 @@
     "lon": -73.96611,
     "congestion_rate": 0.1982,
     "drift": -0.002,
-    "auc": 0.9911,
+    "auc": 0.9794,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -3569,7 +3569,7 @@
     "lon": -73.89655,
     "congestion_rate": 0.1959,
     "drift": -0.0059,
-    "auc": 0.9787,
+    "auc": 0.9659,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3580,7 +3580,7 @@
     "lon": -73.90057,
     "congestion_rate": 0.2118,
     "drift": 0.0092,
-    "auc": 0.9843,
+    "auc": 0.9662,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3591,7 +3591,7 @@
     "lon": -73.89644,
     "congestion_rate": 0.1942,
     "drift": -0.0061,
-    "auc": 0.9784,
+    "auc": 0.9707,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3602,7 +3602,7 @@
     "lon": -73.95038,
     "congestion_rate": 0.235,
     "drift": 0.0343,
-    "auc": 0.9555,
+    "auc": 0.894,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -3613,9 +3613,9 @@
     "lon": -73.94741,
     "congestion_rate": 0.205,
     "drift": 0.0034,
-    "auc": 0.9755,
+    "auc": 0.9644,
     "num_lines": 2,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -3624,7 +3624,7 @@
     "lon": -73.90983,
     "congestion_rate": 0.1679,
     "drift": -0.0331,
-    "auc": 0.9802,
+    "auc": 0.9486,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -3635,7 +3635,7 @@
     "lon": -73.95776,
     "congestion_rate": 0.2151,
     "drift": 0.0148,
-    "auc": 0.9881,
+    "auc": 0.9782,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3646,7 +3646,7 @@
     "lon": -73.84563,
     "congestion_rate": 0.2074,
     "drift": 0.0058,
-    "auc": 0.9146,
+    "auc": 0.8165,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Queens"
@@ -3657,7 +3657,7 @@
     "lon": -73.8896,
     "congestion_rate": 0.2048,
     "drift": 0.0037,
-    "auc": 0.9865,
+    "auc": 0.9672,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -3668,7 +3668,7 @@
     "lon": -73.83632,
     "congestion_rate": 0.1896,
     "drift": -0.0149,
-    "auc": 0.9885,
+    "auc": 0.9281,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3679,7 +3679,7 @@
     "lon": -73.93985,
     "congestion_rate": 0.2109,
     "drift": 0.0099,
-    "auc": 0.9582,
+    "auc": 0.9184,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3690,7 +3690,7 @@
     "lon": -73.93314,
     "congestion_rate": 0.2026,
     "drift": 0.0014,
-    "auc": 0.9701,
+    "auc": 0.9384,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3701,7 +3701,7 @@
     "lon": -73.8605,
     "congestion_rate": 0.2197,
     "drift": 0.0165,
-    "auc": 0.9615,
+    "auc": 0.8936,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3712,7 +3712,7 @@
     "lon": -73.87452,
     "congestion_rate": 0.1547,
     "drift": -0.0453,
-    "auc": 0.988,
+    "auc": 0.9328,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -3723,9 +3723,9 @@
     "lon": -73.88466,
     "congestion_rate": 0.1549,
     "drift": -0.0459,
-    "auc": 0.9736,
+    "auc": 0.9808,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Bronx"
   },
   {
@@ -3734,9 +3734,9 @@
     "lon": -73.91469,
     "congestion_rate": 0.177,
     "drift": -0.0235,
-    "auc": 0.986,
+    "auc": 0.9693,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Bronx"
   },
   {
@@ -3745,7 +3745,7 @@
     "lon": -73.93565,
     "congestion_rate": 0.2394,
     "drift": 0.0389,
-    "auc": 0.9845,
+    "auc": 0.9745,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3756,7 +3756,7 @@
     "lon": -73.94904,
     "congestion_rate": 0.1787,
     "drift": -0.0239,
-    "auc": 0.9719,
+    "auc": 0.9634,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3767,7 +3767,7 @@
     "lon": -73.91158,
     "congestion_rate": 0.2279,
     "drift": 0.0277,
-    "auc": 0.9731,
+    "auc": 0.9596,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -3778,7 +3778,7 @@
     "lon": -73.95128,
     "congestion_rate": 0.2337,
     "drift": 0.0336,
-    "auc": 0.9728,
+    "auc": 0.9334,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3789,7 +3789,7 @@
     "lon": -73.95516,
     "congestion_rate": 0.2163,
     "drift": 0.0139,
-    "auc": 0.956,
+    "auc": 0.9117,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3800,7 +3800,7 @@
     "lon": -73.97457,
     "congestion_rate": 0.171,
     "drift": -0.0322,
-    "auc": 0.9634,
+    "auc": 0.9263,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3811,7 +3811,7 @@
     "lon": -73.85438,
     "congestion_rate": 0.1604,
     "drift": -0.0435,
-    "auc": 0.9679,
+    "auc": 0.9501,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Bronx"
@@ -3822,7 +3822,7 @@
     "lon": -73.98049,
     "congestion_rate": 0.2134,
     "drift": 0.0132,
-    "auc": 0.99,
+    "auc": 0.992,
     "num_lines": 4,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3833,7 +3833,7 @@
     "lon": -73.88408,
     "congestion_rate": 0.1483,
     "drift": -0.0524,
-    "auc": 0.9802,
+    "auc": 0.9553,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3844,7 +3844,7 @@
     "lon": -73.89923,
     "congestion_rate": 0.225,
     "drift": 0.0221,
-    "auc": 0.9786,
+    "auc": 0.9323,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3855,7 +3855,7 @@
     "lon": -73.99637,
     "congestion_rate": 0.1789,
     "drift": -0.0216,
-    "auc": 0.9847,
+    "auc": 0.9768,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3866,7 +3866,7 @@
     "lon": -73.94841,
     "congestion_rate": 0.2256,
     "drift": 0.024,
-    "auc": 0.9592,
+    "auc": 0.9463,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3877,7 +3877,7 @@
     "lon": -73.96279,
     "congestion_rate": 0.191,
     "drift": -0.01,
-    "auc": 0.9758,
+    "auc": 0.9564,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -3888,7 +3888,7 @@
     "lon": -73.90601,
     "congestion_rate": 0.1966,
     "drift": -0.0042,
-    "auc": 0.9913,
+    "auc": 0.9837,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Queens"
@@ -3899,7 +3899,7 @@
     "lon": -73.88004,
     "congestion_rate": 0.2207,
     "drift": 0.0185,
-    "auc": 0.9651,
+    "auc": 0.9403,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3910,7 +3910,7 @@
     "lon": -73.87885,
     "congestion_rate": 0.1548,
     "drift": -0.0454,
-    "auc": 0.9888,
+    "auc": 0.9799,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -3921,7 +3921,7 @@
     "lon": -73.95046,
     "congestion_rate": 0.2036,
     "drift": 0.0012,
-    "auc": 0.9682,
+    "auc": 0.9651,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3932,7 +3932,7 @@
     "lon": -73.95042,
     "congestion_rate": 0.2156,
     "drift": 0.0155,
-    "auc": 0.9805,
+    "auc": 0.9657,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Brooklyn"
@@ -3943,7 +3943,7 @@
     "lon": -73.9685,
     "congestion_rate": 0.1813,
     "drift": -0.0202,
-    "auc": 0.9421,
+    "auc": 0.9192,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3954,7 +3954,7 @@
     "lon": -73.8258,
     "congestion_rate": 0.2065,
     "drift": 0.0055,
-    "auc": 0.9714,
+    "auc": 0.9456,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -3965,7 +3965,7 @@
     "lon": -73.95763,
     "congestion_rate": 0.2248,
     "drift": 0.0242,
-    "auc": 0.9585,
+    "auc": 0.9205,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -3976,9 +3976,9 @@
     "lon": -73.86082,
     "congestion_rate": 0.1282,
     "drift": -0.0729,
-    "auc": 0.9843,
+    "auc": 0.9706,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Bronx"
   },
   {
@@ -3987,7 +3987,7 @@
     "lon": -73.96149,
     "congestion_rate": 0.2553,
     "drift": 0.0546,
-    "auc": 0.9455,
+    "auc": 0.9268,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -3998,9 +3998,9 @@
     "lon": -73.80333,
     "congestion_rate": 0.193,
     "drift": -0.009,
-    "auc": 0.9714,
+    "auc": 0.956,
     "num_lines": 1,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Queens"
   },
   {
@@ -4009,7 +4009,7 @@
     "lon": -73.82812,
     "congestion_rate": 0.1702,
     "drift": -0.0311,
-    "auc": 0.983,
+    "auc": 0.9751,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4020,9 +4020,9 @@
     "lon": -73.86761,
     "congestion_rate": 0.1614,
     "drift": -0.0388,
-    "auc": 0.9873,
+    "auc": 0.9843,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Bronx"
   },
   {
@@ -4031,7 +4031,7 @@
     "lon": -73.85536,
     "congestion_rate": 0.2049,
     "drift": 0.0036,
-    "auc": 0.979,
+    "auc": 0.9236,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -4042,7 +4042,7 @@
     "lon": -73.8949,
     "congestion_rate": 0.1584,
     "drift": -0.0438,
-    "auc": 0.9824,
+    "auc": 0.958,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4053,7 +4053,7 @@
     "lon": -73.95068,
     "congestion_rate": 0.2079,
     "drift": 0.0064,
-    "auc": 0.9771,
+    "auc": 0.9657,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4064,9 +4064,9 @@
     "lon": -73.9977,
     "congestion_rate": 0.2124,
     "drift": 0.0123,
-    "auc": 0.9877,
+    "auc": 0.9597,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -4075,7 +4075,7 @@
     "lon": -73.90177,
     "congestion_rate": 0.1882,
     "drift": -0.0122,
-    "auc": 0.99,
+    "auc": 0.9818,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4086,7 +4086,7 @@
     "lon": -73.99287,
     "congestion_rate": 0.1993,
     "drift": -0.0008,
-    "auc": 0.9925,
+    "auc": 0.9871,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4097,7 +4097,7 @@
     "lon": -73.96225,
     "congestion_rate": 0.2172,
     "drift": 0.0168,
-    "auc": 0.9634,
+    "auc": 0.9357,
     "num_lines": 3,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -4108,7 +4108,7 @@
     "lon": -73.93724,
     "congestion_rate": 0.2421,
     "drift": 0.0421,
-    "auc": 0.9857,
+    "auc": 0.9653,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Queens"
@@ -4119,9 +4119,9 @@
     "lon": -73.9402,
     "congestion_rate": 0.15,
     "drift": -0.0501,
-    "auc": 0.9843,
+    "auc": 0.9692,
     "num_lines": 3,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Queens"
   },
   {
@@ -4130,7 +4130,7 @@
     "lon": -73.96416,
     "congestion_rate": 0.2551,
     "drift": 0.0543,
-    "auc": 0.9406,
+    "auc": 0.8865,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -4141,7 +4141,7 @@
     "lon": -73.95412,
     "congestion_rate": 0.2427,
     "drift": 0.0418,
-    "auc": 0.8948,
+    "auc": 0.8252,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -4152,7 +4152,7 @@
     "lon": -73.92078,
     "congestion_rate": 0.2188,
     "drift": 0.0142,
-    "auc": 0.9565,
+    "auc": 0.9313,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4163,7 +4163,7 @@
     "lon": -74.01379,
     "congestion_rate": 0.2389,
     "drift": 0.0371,
-    "auc": 0.9732,
+    "auc": 0.9478,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -4174,7 +4174,7 @@
     "lon": -74.01334,
     "congestion_rate": 0.227,
     "drift": 0.0262,
-    "auc": 0.9771,
+    "auc": 0.9662,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Manhattan"
@@ -4185,9 +4185,9 @@
     "lon": -73.90894,
     "congestion_rate": 0.262,
     "drift": 0.0614,
-    "auc": 0.9634,
+    "auc": 0.9499,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -4196,7 +4196,7 @@
     "lon": -73.91195,
     "congestion_rate": 0.2639,
     "drift": 0.0627,
-    "auc": 0.966,
+    "auc": 0.9489,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4207,7 +4207,7 @@
     "lon": -73.84386,
     "congestion_rate": 0.1946,
     "drift": -0.0058,
-    "auc": 0.9845,
+    "auc": 0.9466,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Queens"
@@ -4218,7 +4218,7 @@
     "lon": -73.83559,
     "congestion_rate": 0.24,
     "drift": 0.0356,
-    "auc": 0.9408,
+    "auc": 0.9013,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -4229,7 +4229,7 @@
     "lon": -73.95326,
     "congestion_rate": 0.292,
     "drift": 0.0912,
-    "auc": 0.9656,
+    "auc": 0.9205,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Manhattan"
@@ -4240,9 +4240,9 @@
     "lon": -73.91633,
     "congestion_rate": 0.2174,
     "drift": 0.0156,
-    "auc": 0.9624,
+    "auc": 0.9145,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Brooklyn"
   },
   {
@@ -4251,7 +4251,7 @@
     "lon": -73.90774,
     "congestion_rate": 0.2147,
     "drift": 0.0134,
-    "auc": 0.9571,
+    "auc": 0.886,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Queens"
@@ -4262,7 +4262,7 @@
     "lon": -73.95416,
     "congestion_rate": 0.1982,
     "drift": -0.0025,
-    "auc": 0.9929,
+    "auc": 0.9884,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -4273,7 +4273,7 @@
     "lon": -73.88075,
     "congestion_rate": 0.1958,
     "drift": -0.0059,
-    "auc": 0.9694,
+    "auc": 0.8716,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4284,7 +4284,7 @@
     "lon": -73.89307,
     "congestion_rate": 0.2213,
     "drift": 0.0212,
-    "auc": 0.9846,
+    "auc": 0.9799,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4295,7 +4295,7 @@
     "lon": -73.99596,
     "congestion_rate": 0.2028,
     "drift": 0.0013,
-    "auc": 0.9685,
+    "auc": 0.9562,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4306,7 +4306,7 @@
     "lon": -74.01304,
     "congestion_rate": 0.2304,
     "drift": 0.0303,
-    "auc": 0.9771,
+    "auc": 0.9593,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4317,9 +4317,9 @@
     "lon": -73.99714,
     "congestion_rate": 0.2266,
     "drift": 0.0266,
-    "auc": 0.9857,
+    "auc": 0.9495,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -4328,9 +4328,9 @@
     "lon": -74.00374,
     "congestion_rate": 0.2333,
     "drift": 0.0331,
-    "auc": 0.9938,
+    "auc": 0.9749,
     "num_lines": 2,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Manhattan"
   },
   {
@@ -4339,7 +4339,7 @@
     "lon": -74.07365,
     "congestion_rate": 0.2069,
     "drift": 0.0064,
-    "auc": 0.9926,
+    "auc": 0.9908,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Staten Island"
@@ -4350,7 +4350,7 @@
     "lon": -73.86761,
     "congestion_rate": 0.1667,
     "drift": -0.0338,
-    "auc": 0.9778,
+    "auc": 0.9285,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -4361,7 +4361,7 @@
     "lon": -73.92074,
     "congestion_rate": 0.2202,
     "drift": 0.0199,
-    "auc": 0.9817,
+    "auc": 0.9596,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Queens"
@@ -4372,7 +4372,7 @@
     "lon": -73.95085,
     "congestion_rate": 0.2332,
     "drift": 0.0302,
-    "auc": 0.9592,
+    "auc": 0.9529,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4383,9 +4383,9 @@
     "lon": -73.81071,
     "congestion_rate": 0.2558,
     "drift": 0.0551,
-    "auc": 0.9531,
+    "auc": 0.9366,
     "num_lines": 1,
-    "station_tier": 1,
+    "station_tier": 2,
     "borough": "Queens"
   },
   {
@@ -4394,7 +4394,7 @@
     "lon": -73.80797,
     "congestion_rate": 0.2506,
     "drift": 0.0506,
-    "auc": 0.9909,
+    "auc": 0.988,
     "num_lines": 3,
     "station_tier": 4,
     "borough": "Queens"
@@ -4405,7 +4405,7 @@
     "lon": -73.90198,
     "congestion_rate": 0.2548,
     "drift": 0.0537,
-    "auc": 0.9604,
+    "auc": 0.9597,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4416,7 +4416,7 @@
     "lon": -73.92261,
     "congestion_rate": 0.2228,
     "drift": 0.0221,
-    "auc": 0.9596,
+    "auc": 0.9321,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4427,7 +4427,7 @@
     "lon": -73.98694,
     "congestion_rate": 0.2259,
     "drift": 0.0259,
-    "auc": 0.9859,
+    "auc": 0.9801,
     "num_lines": 12,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4438,7 +4438,7 @@
     "lon": -74.07484,
     "congestion_rate": 0.1586,
     "drift": -0.0538,
-    "auc": 0.9326,
+    "auc": 0.9245,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Staten Island"
@@ -4449,7 +4449,7 @@
     "lon": -73.90523,
     "congestion_rate": 0.2196,
     "drift": 0.0194,
-    "auc": 0.9726,
+    "auc": 0.9593,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4460,7 +4460,7 @@
     "lon": -73.98311,
     "congestion_rate": 0.2312,
     "drift": 0.0306,
-    "auc": 0.9861,
+    "auc": 0.9617,
     "num_lines": 1,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -4471,7 +4471,7 @@
     "lon": -73.93073,
     "congestion_rate": 0.1732,
     "drift": -0.0269,
-    "auc": 0.9604,
+    "auc": 0.9454,
     "num_lines": 2,
     "station_tier": 3,
     "borough": "Brooklyn"
@@ -4482,7 +4482,7 @@
     "lon": -73.89858,
     "congestion_rate": 0.1994,
     "drift": -0.0026,
-    "auc": 0.9745,
+    "auc": 0.9343,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4493,7 +4493,7 @@
     "lon": -73.8894,
     "congestion_rate": 0.1909,
     "drift": -0.0129,
-    "auc": 0.9596,
+    "auc": 0.8752,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4504,7 +4504,7 @@
     "lon": -73.89036,
     "congestion_rate": 0.2294,
     "drift": 0.0268,
-    "auc": 0.9593,
+    "auc": 0.91,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4515,7 +4515,7 @@
     "lon": -73.89169,
     "congestion_rate": 0.212,
     "drift": 0.0087,
-    "auc": 0.9667,
+    "auc": 0.9368,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4526,7 +4526,7 @@
     "lon": -73.95358,
     "congestion_rate": 0.2219,
     "drift": 0.0215,
-    "auc": 0.9781,
+    "auc": 0.9609,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Queens"
@@ -4537,7 +4537,7 @@
     "lon": -74.0005,
     "congestion_rate": 0.2542,
     "drift": 0.054,
-    "auc": 0.9818,
+    "auc": 0.953,
     "num_lines": 7,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4548,7 +4548,7 @@
     "lon": -73.97594,
     "congestion_rate": 0.1926,
     "drift": -0.0101,
-    "auc": 0.9457,
+    "auc": 0.8753,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Brooklyn"
@@ -4559,7 +4559,7 @@
     "lon": -74.01219,
     "congestion_rate": 0.2479,
     "drift": 0.0475,
-    "auc": 0.9754,
+    "auc": 0.9603,
     "num_lines": 1,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4570,7 +4570,7 @@
     "lon": -73.85062,
     "congestion_rate": 0.218,
     "drift": 0.0178,
-    "auc": 0.9864,
+    "auc": 0.9593,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -4581,7 +4581,7 @@
     "lon": -74.0091,
     "congestion_rate": 0.234,
     "drift": 0.0335,
-    "auc": 0.9877,
+    "auc": 0.9843,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4592,7 +4592,7 @@
     "lon": -74.01186,
     "congestion_rate": 0.2294,
     "drift": 0.029,
-    "auc": 0.9878,
+    "auc": 0.9909,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Manhattan"
@@ -4603,7 +4603,7 @@
     "lon": -73.88005,
     "congestion_rate": 0.1915,
     "drift": -0.0105,
-    "auc": 0.9776,
+    "auc": 0.9664,
     "num_lines": 2,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4614,7 +4614,7 @@
     "lon": -73.84295,
     "congestion_rate": 0.162,
     "drift": -0.0386,
-    "auc": 0.9539,
+    "auc": 0.9523,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -4625,7 +4625,7 @@
     "lon": -73.88628,
     "congestion_rate": 0.1713,
     "drift": -0.0319,
-    "auc": 0.9707,
+    "auc": 0.9476,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
@@ -4636,7 +4636,7 @@
     "lon": -73.90404,
     "congestion_rate": 0.2268,
     "drift": 0.0235,
-    "auc": 0.9554,
+    "auc": 0.9126,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Brooklyn"
@@ -4647,9 +4647,9 @@
     "lon": -73.9502,
     "congestion_rate": 0.2105,
     "drift": 0.0096,
-    "auc": 0.9865,
+    "auc": 0.9842,
     "num_lines": 2,
-    "station_tier": 2,
+    "station_tier": 3,
     "borough": "Brooklyn"
   },
   {
@@ -4658,7 +4658,7 @@
     "lon": -73.85158,
     "congestion_rate": 0.2374,
     "drift": 0.035,
-    "auc": 0.9574,
+    "auc": 0.9322,
     "num_lines": 2,
     "station_tier": 1,
     "borough": "Queens"
@@ -4669,7 +4669,7 @@
     "lon": -73.86923,
     "congestion_rate": 0.1772,
     "drift": -0.0232,
-    "auc": 0.987,
+    "auc": 0.9814,
     "num_lines": 2,
     "station_tier": 4,
     "borough": "Queens"
@@ -4680,7 +4680,7 @@
     "lon": -73.87875,
     "congestion_rate": 0.1996,
     "drift": -0.0018,
-    "auc": 0.9836,
+    "auc": 0.9591,
     "num_lines": 1,
     "station_tier": 2,
     "borough": "Bronx"
@@ -4691,9 +4691,9 @@
     "lon": -73.98675,
     "congestion_rate": 0.2406,
     "drift": 0.0402,
-    "auc": 0.9725,
+    "auc": 0.9142,
     "num_lines": 1,
-    "station_tier": 3,
+    "station_tier": 4,
     "borough": "Brooklyn"
   },
   {
@@ -4702,7 +4702,7 @@
     "lon": -73.84704,
     "congestion_rate": 0.1629,
     "drift": -0.038,
-    "auc": 0.9786,
+    "auc": 0.9578,
     "num_lines": 1,
     "station_tier": 1,
     "borough": "Bronx"
