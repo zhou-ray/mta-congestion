@@ -19,32 +19,24 @@ jobs:
           python-version: '3.12'
 
       - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgomp1
+        run: sudo apt-get install -y libgomp1
 
       - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Create .env file
-        run: |
-          echo "SOCRATA_APP_TOKEN=${{ secrets.SOCRATA_APP_TOKEN }}" > .env
+        run: echo "SOCRATA_APP_TOKEN=${{ secrets.SOCRATA_APP_TOKEN }}" > .env
 
-      - name: Download Parquet data
-        run: |
-          python -m backfill
-          python -m ingest_2025
+      - name: Download 2023 data
+        run: python -m backfill
 
       - name: Run forecast
-        run: |
-          python -m forecast
+        run: python -m forecast
 
       - name: Generate forecast tool
-        run: |
-          python generate_forecast_tool.py
+        run: python generate_forecast_tool.py
 
-      - name: Commit and push
+      - name: Commit and push updated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
