@@ -6,6 +6,7 @@
 
 # Data files
 data/
+!data/models/*.pkl
 
 # Python
 __pycache__/
