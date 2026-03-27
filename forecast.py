@@ -374,6 +374,33 @@ def run_forecast(days_ahead: int = 90):
     print(f"Forecast saved to {path} ({size_mb:.1f} MB)")
     print(f"Generated at: {out['generated_at']}")
 
+def export_lag_lookup_json():
+    """
+    Export the lag lookup table as a small JSON file.
+    This is committed to the repo so GitHub Actions doesn't need to download Parquet data.
+    """
+    import json
+    print("Exporting lag lookup to JSON...")
+    df = build_lag_lookup()
+    
+    # Convert to nested dict: {station: {dow: {hour: avg_ridership}}}
+    lookup = {}
+    for _, row in df.iterrows():
+        s = row['station_complex']
+        d = int(row['dow'])
+        h = int(row['hour'])
+        if s not in lookup:
+            lookup[s] = {}
+        if d not in lookup[s]:
+            lookup[s][d] = {}
+        lookup[s][d][h] = round(float(row['avg_ridership']), 2)
+    
+    path = os.path.join(os.path.dirname(__file__), 'data', 'lag_lookup.json')
+    with open(path, 'w') as f:
+        json.dump(lookup, f, separators=(',', ':'))
+    
+    size_mb = os.path.getsize(path) / 1024 / 1024
+    print(f"  Saved to {path} ({size_mb:.1f} MB)")
 
 if __name__ == "__main__":
     run_forecast(days_ahead=90)
