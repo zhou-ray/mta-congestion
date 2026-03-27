@@ -5,10 +5,8 @@
 .env
 
 # Data files
-data/*
-!data/lag_lookup.json
-!data/models
-!data/models/*.pkl
+data/cache
+data/raw
 
 # Python
 __pycache__/
