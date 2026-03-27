@@ -13,7 +13,27 @@ OUTPUT_PATH = os.path.join(os.path.dirname(__file__), 'visualizations')
 
 
 def build_lag_lookup() -> pd.DataFrame:
-    print("Building lag lookup table...")
+    json_path = os.path.join(os.path.dirname(__file__), 'data', 'lag_lookup.json')
+
+    if os.path.exists(json_path):
+        print("  Loading lag lookup from pre-exported JSON...")
+        with open(json_path) as f:
+            lookup = json.load(f)
+        rows = []
+        for station, dows in lookup.items():
+            for dow, hours in dows.items():
+                for hour, avg in hours.items():
+                    rows.append({
+                        'station_complex': station,
+                        'dow': int(dow),
+                        'hour': int(hour),
+                        'avg_ridership': avg
+                    })
+        df = pd.DataFrame(rows)
+        print(f"  Lag lookup: {len(df)} rows across {df['station_complex'].nunique()} stations")
+        return df
+
+    print("Building lag lookup from Parquet...")
     conn = get_connection()
     df = conn.execute("""
         SELECT
@@ -401,6 +421,7 @@ def export_lag_lookup_json():
     
     size_mb = os.path.getsize(path) / 1024 / 1024
     print(f"  Saved to {path} ({size_mb:.1f} MB)")
+    
 
 if __name__ == "__main__":
     run_forecast(days_ahead=90)

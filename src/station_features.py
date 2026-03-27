@@ -56,6 +56,26 @@ def build_station_features() -> pd.DataFrame:
     Build a DataFrame of static station-level features.
     One row per station.
     """
+    import json as _json
+    import os as _os
+
+    json_path = _os.path.join(
+        _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))),
+        'data', 'station_features.json'
+    )
+
+    if _os.path.exists(json_path):
+        with open(json_path) as f:
+            records = _json.load(f)
+        df = pd.DataFrame(records)
+        df['station_tier'] = df['station_tier'].astype(int)
+        print(f"Built features for {len(df)} stations")
+        print(f"\nStation tier distribution:")
+        print(df['station_tier'].value_counts().sort_index())
+        print(f"\nLines range: {df['num_lines'].min()} to {df['num_lines'].max()}")
+        print(f"\nTerminal stations found: {df['is_terminal'].sum()}")
+        return df
+
     conn = get_connection()
 
     # Get base station info and historical ridership stats
