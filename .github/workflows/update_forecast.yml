@@ -30,9 +30,6 @@ jobs:
       - name: Create .env file
         run: echo "SOCRATA_APP_TOKEN=${{ secrets.SOCRATA_APP_TOKEN }}" > .env
 
-      - name: Download 2023 data
-        run: python -m backfill
-
       - name: Run forecast
         run: python -m forecast
 
