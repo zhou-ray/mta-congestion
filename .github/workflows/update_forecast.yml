@@ -34,7 +34,7 @@
           run: echo "SOCRATA_APP_TOKEN=${{ secrets.SOCRATA_APP_TOKEN }}" > .env
 
         - name: Run forecast
-          run: PYTHONPATH=. python script/forecast.py
+          run: PYTHONPATH=. python scripts/forecast.py
 
         - name: Generate forecast tool
           run: PYTHONPATH=. python scripts/generate_forecast_tool.py
